@@ -11,23 +11,18 @@
         <a href="index.html"><img src="http://placehold.it/150x100" alt="Mishka">Главная</a>
       </div>
       <nav class="main-nav">
-        <span class="main-nav__toggler"> <!-- Мобильная навигация -->
-          <ul class="nav-list">
-            <li class="nav-list__item"><a href="catalog.html">Каталог товаро</a></li>
-            <li class="nav-list__item"><a href="form.html">Вязание на заказ</a></li>
-            <li class="nav-list__item nav-list__item_search"><a href="#">Поиск</a></li>
-            <li class="nav-list__item nav-list__item_basket"><a href="#">Корзина: пока пуста</a></li>
-          </ul>
-        </span>
+        <button class="main-nav__toggler main-nav__toggler_hidden main-nav__toggler_unactive" type="button"></button> <!-- Кнопка мобильной навигации -->
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list_left-side">
             <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
             <li class="main-nav__item"><a href="#">Новые поступления</a></li>
             <li class="main-nav__item"><a href="#">Распродажа</a></li>
           </ul>
-          <div class="main-nav__search"><a href="#">Поиск</a></div>
-          <div class="main-nav__basket"><a href="#">Корзина: пока пуста</a></div>
+          <ul class="main-nav__list main-nav__list_right-side">
+            <li class="main-nav__item main-nav__item_search"><a href="#">Поиск</a></li>
+            <li class="main-nav__item main-nav__item_basket"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
           <span class="main-nav__delivery">Бесплатная доставка по России</span>
         </div>
       </nav>
@@ -45,19 +40,19 @@
           <h2 class="best-week__title">Вязаные корзинки</h2>
           <span class="best-week__promo">товар недели</span>
           <div class="best-week__inner">
-            <p class="best-week_descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <table class="best-week__table">
-              <tr>
-                <td>Цвет:</td>
-                <td>"Тиффани"/серый</td>
+            <p class="best-week__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="table table_block_best-week">
+              <tr class="table__row table__row_block_best-week">
+                <td class="table__data table__data_block_best-week">Цвет:</td>
+                <td class="table__data table__data_block_best-week">"Тиффани"/серый</td>
               </tr>
-              <tr>
-                <td>Диаметри:</td>
-                <td>25 см</td>
+              <tr  class="table__row table__row_block_best-week">
+                <td class="table__data table__data_block_best-week">Диаметри:</td>
+                <td class="table__data table__data_block_best-week">25 см</td>
               </tr>
-              <tr>
-                <td>Высота:</td>
-                <td>15 см</td>
+              <tr  class="table__row table__row_block_best-week">
+                <td class="table__data table__data_block_best-week">Высота:</td>
+                <td class="table__data table__data_block_best-week">15 см</td>
               </tr>
             </table>
             <span class="best-week__price">Цена: 990 руб.</span>
@@ -87,10 +82,10 @@
           <div class="slider">
             <ul class="slider__list">
               <li class="slider__item">
-                <blockquote>
-                  Я молодая мама, но все равно фотографии не набирали и близко такого количество лайков, как у популярных истамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+                <blockquote class="blockquote">
+                  <p class="blockquote__text">Я молодая мама, но все равно фотографии не набирали и близко такого количество лайков, как у популярных истамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                  <cite class="blockquote__author">Анастасия Красильникова<br><span>@misssssiskras</span></cite>
                 </blockquote>
-                <cite class="slider__author">Анастасия Красильникова<br><span>@misssssiskras</span></cite>
               </li>
             </ul>
             <div class="slider__btns">
@@ -105,14 +100,14 @@
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__img"></div>
-          <table class="contacts__info">
-            <tr>
-              <td>e-mail:</td>
-              <td><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+          <table class="table table_block_contacts">
+            <tr class="table__row table__row_block_contacts">
+              <td class="table__data table__data_block_contacts">e-mail:</td>
+              <td class="table__data table__data_block_contacts"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
             </tr>
-            <tr>
-              <td>адрес:</td>
-              <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            <tr class="table__row table__row_block_contacts">
+              <td class="table__data table__data_block_contacts">адрес:</td>
+              <td class="table__data table__data_block_contacts">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
             </tr>
           </table>
         </div>

@@ -11,23 +11,18 @@
         <a href="index.html"><img src="http://placehold.it/150x100" alt="Mishka">Главная</a>
       </div>
       <nav class="main-nav">
-        <span class="main-nav__toggler"> <!-- Мобильная навигация -->
-          <ul class="nav-list">
-            <li class="nav-list__item"><a href="catalog.html">Каталог товаро</a></li>
-            <li class="nav-list__item"><a href="form.html">Вязание на заказ</a></li>
-            <li class="nav-list__item nav-list__item_search"><a href="#">Поиск</a></li>
-            <li class="nav-list__item nav-list__item_basket"><a href="#">Корзина: пока пуста</a></li>
-          </ul>
-        </span>
+        <button class="main-nav__toggler main-nav__toggler_hidden main-nav__toggler_unactive" type="button"></button> <!-- Кнопка мобильной навигации -->
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list_left-side">
             <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
             <li class="main-nav__item"><a href="#">Новые поступления</a></li>
             <li class="main-nav__item"><a href="#">Распродажа</a></li>
           </ul>
-          <div class="main-nav__search"><a href="#">Поиск</a></div>
-          <div class="main-nav__basket"><a href="#">Корзина: пока пуста</a></div>
+          <ul class="main-nav__list main-nav__list_right-side">
+            <li class="main-nav__item main-nav__item_search"><a href="#">Поиск</a></li>
+            <li class="main-nav__item main-nav__item_basket"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
           <span class="main-nav__delivery">Бесплатная доставка по России</span>
         </div>
       </nav>
@@ -39,21 +34,21 @@
       <section class="main-content">
         <section class="catalog-items">
           <article class="catalog-item">
-            <a href="#"><img src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик"></a>
+            <a class="catalog-item__img" href="#"><img src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик"></a>
             <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
             <p class="catalog-item__descr">Рост 30 см, вес 200 г</p>
             <span class="catalog-item__price">1 200 руб.</span>
             <a class="catalog-item__buy" href="#">В корзину</a>
           </article>
           <article class="catalog-item">
-            <a href="#"><img src="http://placehold.it/150x100" alt="Корзина для белья"></a>
+            <a class="catalog-item__img" href="#"><img src="http://placehold.it/150x100" alt="Корзина для белья"></a>
             <h3 class="catalog-item__title">Корзина для белья</h3>
             <p class="catalog-item__descr">Диаметр 15 см, высота 10 см</p>
             <span class="catalog-item__price">690 руб.</span>
             <a class="catalog-item__buy" href="#">В корзину</a>
           </article>
           <article class="catalog-item">
-            <a href="#"><img src="http://placehold.it/150x100" alt="Большая корзина для игрушек"></a>
+            <a class="catalog-item__img" href="#"><img src="http://placehold.it/150x100" alt="Большая корзина для игрушек"></a>
             <h3 class="catalog-item__title">Большая корзина для игрушек</h3>
             <p class="catalog-item__descr">Диаметр 30 см, высота 30 см</p>
             <span class="catalog-item__price">1 500 руб.</span>
