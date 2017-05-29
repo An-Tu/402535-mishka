@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="page-header__title">Mishka - изделия ручной работы</h1> <!-- Скрою, для семантики -->
+      <div class="page-header__logo">
+        <a href="index.html"><img src="http://placehold.it/150x100" alt="Mishka">Главная</a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggler main-nav__toggler_hidden main-nav__toggler_unactive" type="button"></button> <!-- Кнопка мобильной навигации -->
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list main-nav__list_left-side">
+            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a href="#">Новые поступления</a></li>
+            <li class="main-nav__item"><a href="#">Распродажа</a></li>
+          </ul>
+          <ul class="main-nav__list main-nav__list_right-side">
+            <li class="main-nav__item main-nav__item_search"><a href="#">Поиск</a></li>
+            <li class="main-nav__item main-nav__item_basket"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+          <span class="main-nav__delivery">Бесплатная доставка по России</span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="head-content">
+        <h2 class="head-content__title">Вязание на заказ</h2>
+      </div>
+      <section class="main-content">
+        <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="order-form__wrapper">
+            <p class="order-form__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+            <fieldset class="order-form__type">
+              <legend class="order-form__legend">Тип</legend>
+              <input class="order-form__radio" type="radio" id="interior" name="type" value="interior">
+              <label for="interior">Аксессуфр для интерьера</label>
+              <input class="order-form__radio" type="radio" id="baby-toy" name="type" value="baby-toy">
+              <label for="baby-toy">Детская игрушка</label>
+            </fieldset>
+            <fieldset class="order-form__color">
+              <legend class="order-form__legend">Цвет</legend>
+              <input class="order-form__checkbox" type="checkbox" id="white" name="color" value="white">
+              <label for="white">Белый</label>
+              <input class="order-form__checkbox" type="checkbox" id="gray" name="color" value="gray">
+              <label for="gray">Серый</label>
+              <input class="order-form__checkbox" type="checkbox" id="tiffany" name="color" value="tiffany">
+              <label for="tiffany">"Тиффани"</label>
+              <input class="order-form__checkbox" type="checkbox" id="black" name="color" value="black">
+              <label for="black">Черный</label>
+              <input class="order-form__checkbox" type="checkbox" id="pink" name="color" value="pink">
+              <label for="pink">Розовый</label>
+              <input class="order-form__checkbox" type="checkbox" id="orange" name="color" value="orange">
+              <label for="orange">Оранжевый</label>
+            </fieldset>
+            <fieldset class="order-form__full-name">
+              <legend class="order-form__legend">ФИО</legend>
+              <label for="first-name">Имя:</label>
+              <input class="order-form__text order-form__text_long" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
+              <label for="surname">Фамилия:</label>
+              <input class="order-form__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+              <label for="patronymic">Отчество:</label>
+              <input class="order-form__text" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+            </fieldset>
+            <fieldset class="order-form__contacts">
+              <legend class="order-form__legend">Тел</legend>
+              <label for="phone">Телефон</label>
+              <input class="order-form__text" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
+            </fieldset>
+            <fieldset class="order-form__contacts">
+              <legend class="order-form__legend">E-mail</legend>
+              <label for="e-mail">E-mail</label>
+              <input class="order-form__text" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
+            </fieldset>
+            <fieldset class="order-form__extra">
+              <legend class="order-form__legend">Доп</legend>
+              <label for="extra">E-mail</label>
+              <textarea class="order-form__textarea" name="extra" id="extra" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
+            </fieldset>
+            <input class="order-form__btn" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
+            <small class="order-form__hint"><sup>*</sup>Поля обязательные для заполнения</small>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="http://placehold.it/150x100" alt="Mishka">
+        </div>
+        <div class="page-footer__social">
+              <span class="social-links">
+                <a class="social-link social-link_in" href="#">Мы в инстаграм</a>
+                <a class="social-link social-link_fb" href="#">Мы в фейсбук</a>
+                <a class="social-link social-link_tw" href="#">Мы в твиттере</a>
+              </span>
+        </div>
+        <p class="page-footer__copyright">
+          Разработано
+          <a href="#"><img src="http://placehold.it/150x100" alt="htmlacademy">htmlacademy</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
