@@ -3,8 +3,8 @@
   left: 0;
 
   &_hidden {
-     display: none;
-   }
+    display: none;
+  }
 }
 
 .main-nav__toggler {
@@ -35,11 +35,11 @@
 
   &_hidden {
     display: none;
-   }
+  }
 }
 
 .main-nav__delivery {
   &_hidden {
-     display: none;
-   }
+    display: none;
+  }
 }

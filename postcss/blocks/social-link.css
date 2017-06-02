@@ -9,14 +9,14 @@
   &_in {
     margin-right: 41px;
     background: url("../../img/icon-insta.svg") no-repeat center;
-   }
+  }
 
   &_fb {
     margin-right: 41px;
     background: url("../../img/icon-fb.svg") no-repeat center;
-   }
+  }
 
   &_tw {
     background: url("../../img/icon-twitter.svg") no-repeat center;
-   }
+  }
 }

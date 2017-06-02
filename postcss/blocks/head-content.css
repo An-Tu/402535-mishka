@@ -11,7 +11,7 @@
     background-image: url(../../img/hero-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position: 50% -18px;
-   }
+  }
 }
 
 .head-content__title {
@@ -38,9 +38,9 @@
 
   &_left {
     background-color: $btn-color-1;
-   }
+  }
 
   &_right {
-     background-color: $btn-color-2;
-   }
+    background-color: $btn-color-2;
+  }
 }
