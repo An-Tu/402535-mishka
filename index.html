@@ -2,52 +2,53 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body>
+  <body class="main-container theme">
     <header class="page-header">
       <h1 class="page-header__title">Mishka - изделия ручной работы</h1> <!-- Скрою, для семантики -->
       <div class="page-header__logo">
-        <a href="index.html"><img src="http://placehold.it/150x100" alt="Mishka">Главная</a>
+        <a href="index.html"><img src="img/logo-mobile.svg" alt="Mishka">Главная</a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav theme__text-size">
         <button class="main-nav__toggler main-nav__toggler_hidden main-nav__toggler_unactive" type="button"></button> <!-- Кнопка мобильной навигации -->
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper main-nav__wrapper_hidden">
           <ul class="main-nav__list main-nav__list_left-side">
             <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-            <li class="main-nav__item"><a href="#">Новые поступления</a></li>
-            <li class="main-nav__item"><a href="#">Распродажа</a></li>
+            <li class="main-nav__item main-nav__item_hidden"><a href="#">Новые поступления</a></li>
+            <li class="main-nav__item main-nav__item_hidden"><a href="#">Распродажа</a></li>
           </ul>
           <ul class="main-nav__list main-nav__list_right-side">
-            <li class="main-nav__item main-nav__item_search"><a href="#">Поиск</a></li>
+            <li class="main-nav__item main-nav__item_search"><a href="#">Поиск по сайту</a></li>
             <li class="main-nav__item main-nav__item_basket"><a href="#">Корзина: пока пуста</a></li>
           </ul>
-          <span class="main-nav__delivery">Бесплатная доставка по России</span>
+          <span class="main-nav__delivery main-nav__delivery_hidden">Бесплатная доставка по России</span>
         </div>
       </nav>
     </header>
     <main>
-      <section class="promo-block">
-        <h2 class="promo-block__title">Милые штучки ручной работы для дома</h2>
-        <div class="promo-block__list">
-          <a class="promo-block__btn" href="#">Предметы<br>интерьера</a>
-          <a class="promo-block__btn" href="#">Детские<br>игрушки</a>
+      <section class="head-content head-content_background">
+        <h2 class="head-content__title theme__head-title-size">Милые штучки ручной<br>работы для дома</h2>
+        <div class="head-content__list">
+          <a class="head-content__btn head-content__btn_left" href="#">Предметы<br>интерьера</a>
+          <a class="head-content__btn head-content__btn_right" href="#">Детские<br>игрушки</a>
         </div>
       </section>
       <article class="best-week">
         <div class="best-week__wrapper">
-          <h2 class="best-week__title">Вязаные корзинки</h2>
-          <span class="best-week__promo">товар недели</span>
+          <h2 class="best-week__title theme__block-title-size">Вязаные корзинки</h2>
+          <span class="best-week__promo theme__text-size">товар недели</span>
           <div class="best-week__inner">
-            <p class="best-week__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <table class="table table_block_best-week">
+            <p class="best-week__descr theme__small-text-size">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="table table_block_best-week theme__small-text-size">
               <tr class="table__row table__row_block_best-week">
                 <td class="table__data table__data_block_best-week">Цвет:</td>
                 <td class="table__data table__data_block_best-week">"Тиффани"/серый</td>
               </tr>
               <tr  class="table__row table__row_block_best-week">
-                <td class="table__data table__data_block_best-week">Диаметри:</td>
+                <td class="table__data table__data_block_best-week">Диаметр:</td>
                 <td class="table__data table__data_block_best-week">25 см</td>
               </tr>
               <tr  class="table__row table__row_block_best-week">
@@ -55,36 +56,36 @@
                 <td class="table__data table__data_block_best-week">15 см</td>
               </tr>
             </table>
-            <span class="best-week__price">Цена: 990 руб.</span>
-            <a class="btm btm_position_best-week" href="#">Заказать</a>
-          </div>
-          <div class="best-week__img">
-            <img src="http://placehold.it/150x100" alt="Товар недели">
+            <div class="best-week__img">
+              <img src="img/triple-set-mobile@1x.jpg" alt="Товар недели">
+            </div>
+            <span class="best-week__price theme__text-size">Цена: 990 руб.</span>
+            <a class="btn btn_position_best-week" href="#">Заказать</a>
           </div>
         </div>
       </article>
       <section class="about-us">
         <div class="about-us__wrapper">
-          <h2 class="about-us__title">Коротко о нас:</h2>
-          <ul class="about-us__list">
+          <h2 class="about-us__title theme__title-size">Коротко о нас:</h2>
+          <ul class="about-us__list theme__text-size">
             <li class="about-us__item about-us__item_eco">Экологически чистые материалы</li>
-            <li class="about-us__item about-us__item_handmade">Связано в ручную с любовью и умилением</li>
             <li class="about-us__item about-us__item_good-price">Скандинавский стиль по российской цене</li>
-            <li class="about-us__item about-us__item_russia-made">Поддержка отечественного производителя</li>
             <li class="about-us__item about-us__item_likes">Увеличивает лайки на форумах</li>
+            <li class="about-us__item about-us__item_handmade">Связано в ручную с любовью и умилением</li>
+            <li class="about-us__item about-us__item_russia-made">Поддержка отечественного производителя</li>
             <li class="about-us__item about-us__item_gift-wrap">Поставляется в подарочной упаковке</li>
           </ul>
         </div>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper">
-          <h2 class="reviews__title">Отзывы</h2>
+          <h2 class="reviews__title theme__title-size">Отзывы</h2>
           <div class="slider">
             <ul class="slider__list">
               <li class="slider__item">
                 <blockquote class="blockquote">
-                  <p class="blockquote__text">Я молодая мама, но все равно фотографии не набирали и близко такого количество лайков, как у популярных истамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-                  <cite class="blockquote__author">Анастасия Красильникова<br><span>@misssssiskras</span></cite>
+                  <p class="blockquote__text theme__small-text-size">Я молодая мама, но все равно фотографии не набирали и близко такого количество лайков, как у популярных истамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                  <cite class="blockquote__author theme__text-size"><span>Анастасия Красильникова</span><br>@misssssiskras</cite>
                 </blockquote>
               </li>
             </ul>
@@ -100,7 +101,7 @@
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__img"></div>
-          <table class="table table_block_contacts">
+          <table class="table table_block_contacts theme__small-text-size">
             <tr class="table__row table__row_block_contacts">
               <td class="table__data table__data_block_contacts">e-mail:</td>
               <td class="table__data table__data_block_contacts"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
@@ -112,27 +113,29 @@
           </table>
         </div>
         <div class="contacts__map"></div>
-        <a class="btn btn_position_contacts" href="#"></a>
+        <a class="btn btn_position_contacts" href="#">Напишите нам</a>
       </section>
-      <div class="modal-window">  <!-- Модальное окно -->
-        <h3 class="modal-window__title">Добавить в корзину</h3>
-        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__block">
-            <legend class="form__check-size">Выберите размер:</legend>
-            <input class="form__radio" type="radio" name="size" value="s" id="size-s">
-            <label class="form__label" for="size-s">S</label>
-            <input class="form__radio" type="radio" name="size" value="m" id="size-m">
-            <label class="form__label" for="size-m">M</label>
-            <input class="form__radio" type="radio" name="size" value="l" id="size-l">
-            <label class="form__label" for="size-l">L</label>
-            <input class="form__submit" type="submit" value="Добавить">
-          </fieldset>
-        </form>
+      <div class="modal-window modal-window_hidden">
+        <div class="modal-window__container">  <!-- Модальное окно -->
+          <h3 class="modal-window__title theme__title-size">Добавить в корзину</h3>
+          <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="form__block">
+              <legend class="form__check-size theme__small-text-size">Выберите размер:</legend>
+              <input class="form__radio" type="radio" name="size" value="s" id="size-s">
+              <label class="form__label" for="size-s">S</label>
+              <input class="form__radio" type="radio" name="size" value="m" id="size-m">
+              <label class="form__label" for="size-m">M</label>
+              <input class="form__radio" type="radio" name="size" value="l" id="size-l">
+              <label class="form__label" for="size-l">L</label>
+              <input class="btn btn__form" type="submit" value="Добавить">
+            </fieldset>
+          </form>
+        </div>
       </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo">
+        <div class="page-footer__logo page-footer__logo_hidden">
           <img src="http://placehold.it/150x100" alt="Mishka">
         </div>
         <div class="page-footer__social">
@@ -142,10 +145,10 @@
             <a class="social-link social-link_tw" href="#">Мы в твиттере</a>
           </span>
         </div>
-        <p class="page-footer__copyright">
-          Разработано
-          <a href="#"><img src="http://placehold.it/150x100" alt="htmlacademy">htmlacademy</a>
-        </p>
+        <div class="page-footer__copyright">
+          <p class="page-footer__author">Разработано</p>
+          <a class="page-footer__link" href="#"><img src="img/logo-htmlacademy.svg" alt="htmlacademy">htmlacademy</a>
+        </div>
       </div>
     </footer>
   </body>

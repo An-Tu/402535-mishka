@@ -1,0 +1,71 @@
+.about-us__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.about-us__title {
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+.about-us__list {
+  list-style: none;
+  padding: 0;
+  font-weight: bold;
+}
+
+.about-us__item {
+  position: relative;
+  margin-bottom: 80px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 8px;
+   }
+
+  &_eco:before {
+    width: 33px;
+    height: 38px;
+    background-image: url("../../img/icon-feature-1.svg");
+    background-repeat: no-repeat;
+   }
+
+  &_good-price:before {
+     width: 47px;
+     height: 27px;
+     background-image: url("../../img/icon-feature-3.svg");
+     background-repeat: no-repeat;
+   }
+
+  &_likes:before {
+     width: 34px;
+     height: 28px;
+     background-image: url("../../img/icon-feature-5.svg");
+     background-repeat: no-repeat;
+   }
+
+  &_handmade:before {
+     width: 34px;
+     height: 35px;
+     background-image: url("../../img/icon-feature-2.svg");
+     background-repeat: no-repeat;
+   }
+
+  &_russia-made:before {
+     width: 55px;
+     height: 23px;
+     background-image: url("../../img/icon-feature-4.svg");
+     background-repeat: no-repeat;
+   }
+
+  &_gift-wrap:before {
+     width: 33px;
+     height: 32px;
+     background-image: url("../../img/icon-feature-6.svg");
+     background-repeat: no-repeat;
+   }
+}

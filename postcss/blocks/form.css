@@ -1,0 +1,35 @@
+.form__block {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 0;
+}
+
+.form__check-size {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form__radio {
+  display: none;
+}
+
+.form__label {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 82px;
+  padding: 13px 0;
+  margin-right: 7px;
+  border: 2px solid #ececec;
+  font-size: 17px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.form__radio:checked+.form__label {
+  border-color: $btn-color-1;
+}

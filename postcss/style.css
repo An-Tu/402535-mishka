@@ -1,0 +1,26 @@
+@import "global/fonts.css";
+@import "global/variables.css";
+
+@import "blocks/about-us.css";
+@import "blocks/best-week.css";
+@import "blocks/blockquote.css";
+@import "blocks/btn.css";
+@import "blocks/catalog-item.css";
+@import "blocks/catalog-items.css";
+@import "blocks/contacts.css";
+@import "blocks/create-process.css";
+@import "blocks/form.css";
+@import "blocks/head-content.css";
+@import "blocks/main-content.css";
+@import "blocks/main-container.css";
+@import "blocks/main-nav.css";
+@import "blocks/modal-window.css";
+@import "blocks/order-form.css";
+@import "blocks/page-footer.css";
+@import "blocks/page-header.css";
+@import "blocks/reviews.css";
+@import "blocks/slider.css";
+@import "blocks/social-link.css";
+@import "blocks/social-links.css";
+@import "blocks/table.css";
+@import "blocks/theme.css";

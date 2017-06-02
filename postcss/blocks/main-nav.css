@@ -1,0 +1,45 @@
+.main-nav__wrapper {
+  position: absolute;
+  left: 0;
+
+  &_hidden {
+     display: none;
+   }
+}
+
+.main-nav__toggler {
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__item {
+  a {
+    display: block;
+    box-sizing: border-box;
+    width: 320px;
+    padding-left: 75px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #ffffff;
+    box-shadow: inset 0 -1px 0 0 $gray-2;
+  }
+
+  &_hidden {
+    display: none;
+   }
+}
+
+.main-nav__delivery {
+  &_hidden {
+     display: none;
+   }
+}

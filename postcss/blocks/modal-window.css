@@ -1,0 +1,35 @@
+.modal-window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+.modal-window__container {
+  box-sizing: border-box;
+  position: absolute;
+  top: 28%;
+  left: 0;
+  width: 320px;
+  padding: 33px 30px 43px 30px;
+  margin: 0 auto;
+  border-top: 1px solid #c7c7c7;
+  box-shadow: 0 5px 10px -5px #000101;
+  background-color: #ffffff;
+  z-index: 30;
+}
+
+.modal-window_hidden {
+  display: none;
+}
+
+.modal-window__title {
+  padding: 0 50px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
