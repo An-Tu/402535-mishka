@@ -16,8 +16,6 @@
 
 .head-content__title {
   margin: 0;
-  font-weight: bold;
-  text-align: center;
 }
 
 .head-content__list {
@@ -37,10 +35,10 @@
   text-decoration: none;
 
   &_left {
-    background-color: $btn-color-1;
+    background-color: $color-cyan;
   }
 
   &_right {
-    background-color: $btn-color-2;
+    background-color: $color-cyan-darken;
   }
 }

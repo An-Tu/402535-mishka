@@ -18,7 +18,7 @@
   padding-top: 40px;
   margin-bottom: 40px;
   border: none;
-  border-top: 1px solid $btn-color-1;
+  border-top: 1px solid $color-cyan;
 
   &_no-padding-top {
     padding-top: 0;
@@ -43,7 +43,7 @@
   padding-right: 30px;
   text-transform: uppercase;
   font-weight: bold;
-  color: $btn-color-1;
+  color: $color-cyan;
 }
 
 .order-form__radio {
@@ -51,7 +51,7 @@
 }
 
 .order-form__radio:checked+.order-form__radio-label::after {
-  background-color: $btn-color-1;
+  background-color: $color-cyan;
 }
 
 .order-form__radio-label {
@@ -69,7 +69,7 @@
     top: -10px;
     width: 44px;
     height: 44px;
-    border: 2px solid $font-color;
+    border: 2px solid $dark-gray;
     border-radius: 50%;
   }
 
@@ -89,8 +89,8 @@
 }
 
 .order-form__checkbox:checked+.order-form__checkbox-label::after {
-  border-left: 3px solid $font-color;
-  border-bottom: 3px solid $font-color;
+  border-left: 3px solid $dark-gray;
+  border-bottom: 3px solid $dark-gray;
 }
 
 .order-form__checkbox-label {
@@ -109,7 +109,7 @@
     top: -10px;
     width: 44px;
     height: 44px;
-    border: 2px solid $font-color;
+    border: 2px solid $dark-gray;
   }
 
   &::after {
@@ -130,12 +130,8 @@
   border-bottom: 2px solid #000000;
   font-size: 17px;
 
-  &::-moz-placeholder {
-    color: #d2d2d2;
-  }
-
-  &::-webkit-input-placeholder {
-    color: #d2d2d2;
+  &:placeholder {
+    color: $light-gray;
   }
 }
 
@@ -153,20 +149,16 @@
   height: 142px;
   padding: 10px;
   margin-top: 20px;
-  border: 2px solid $font-color;
+  border: 2px solid $dark-gray;
   resize: none;
   font-size: 17px;
 
-  &::-moz-placeholder {
-    color: #d2d2d2;
-  }
-
-  &::-webkit-input-placeholder {
-    color: #d2d2d2;
+  &:placeholder {
+    color: $light-gray;
   }
 }
 
 .order-form__hint {
   font-size: 14px;
-  color: $font-color;
+  color: $dark-gray;
 }

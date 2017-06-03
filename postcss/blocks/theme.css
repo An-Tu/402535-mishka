@@ -1,13 +1,31 @@
+.theme {
+  font-family: "Open Sans", sans-serif;
+}
+
 .theme__head-title-size {
   font-size: 27px;
+  font-weight: bold;
+  text-align: center;
 }
 
-.theme__title-size {
+.theme__block-title-size {
   font-size: 25px;
+  font-weight: bold;
 }
 
-.theme__text-size {
+.theme__list-text {
   font-size: 17px;
+  font-weight: bold;
+}
+
+.theme__ad-title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.theme__form-text-title {
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .theme__small-text-size {
