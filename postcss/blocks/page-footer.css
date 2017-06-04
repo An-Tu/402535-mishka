@@ -1,0 +1,36 @@
+.page-footer__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 30px 20px 30px;
+  margin: 0 auto;
+  background-color: $gray-background;
+}
+
+.page-footer__logo {
+  &_hidden {
+    display: none;
+  }
+}
+
+.page-footer__social {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.page-footer__copyright {
+  text-align: center;
+}
+
+.page-footer__author {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.page-footer__link {
+  font-size: 0;
+  position: relative;
+  top: 10px;
+}

@@ -1,0 +1,23 @@
+.contacts {
+  box-sizing: border-box;
+  padding-top: 44px;
+  padding-bottom: 39px;
+}
+
+.contacts__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.contacts__title {
+  font-size: 18px;
+}
+
+.contacts__map {
+  width: 320px;
+  height: 457px;
+  margin: 0 auto 36px auto;
+  background-image: url("../../img/map-mobile@1x.jpg");
+}

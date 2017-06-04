@@ -1,0 +1,40 @@
+.table {
+  &_best-week {
+    width: 260px;
+    margin-bottom: 28px;
+    border-collapse: collapse;
+    line-height: 1.6;
+  }
+
+  &_contacts {
+    width: 260px;
+    line-height: 2;
+  }
+}
+
+.table__data {
+  &_best-week {
+    border-bottom: 1px solid $gray-2;
+    padding: 10px 0;
+  }
+
+  &_best-week:first-child {
+    width: 100px;
+  }
+
+  &_contacts {
+    vertical-align: top;
+    padding-bottom: 36px;
+
+    &:first-child {
+      width: 100px;
+    }
+  }
+}
+
+.table__link {
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: rgb(68, 68, 68);
+  border-bottom: 1px solid $color-cyan;
+}

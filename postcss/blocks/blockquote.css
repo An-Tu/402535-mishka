@@ -1,0 +1,15 @@
+.blockquote {
+  margin: 0;
+}
+
+.blockquote__text {
+  line-height: 2;
+}
+
+.blockquote__author {
+  font-style: normal;
+}
+
+.blockquote__name {
+  font-weight: bold;
+}

@@ -1,0 +1,22 @@
+.create-process {
+  position: relative;
+  padding: 30px 0;
+  border: 1px solid $gray;
+}
+
+.create-process__video {
+  position: absolute;
+  top: 110px;
+}
+
+.create-process__title {
+  margin-bottom: 210px;
+  margin-left: 90px;
+}
+
+.create-process__descr {
+  font-size: 13px;
+  padding: 0 34px;
+  color: rgb(68, 68, 68);
+  line-height: 1.846;
+}

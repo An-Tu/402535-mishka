@@ -1,0 +1,37 @@
+.catalog-item {
+  position: relative;
+  border: 1px solid $gray;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.catalog-item__title {
+  margin-top: 32px;
+  margin-left: 28px;
+  margin-bottom: 18px;
+}
+
+.catalog-item__descr {
+  margin: 0 28px 27px 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid $gray-2;
+  font-size: 13px;
+  color: $dark-gray;
+}
+
+.catalog-item__price {
+  margin-left: 28px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.catalog-item__buy {
+  display: inline-block;
+  position: absolute;
+  right: 28px;
+  vertical-align: top;
+  font-size: 0;
+  width: 21px;
+  height: 19px;
+  background: url("../../img/icon-cart.svg") no-repeat;
+}

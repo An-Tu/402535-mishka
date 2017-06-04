@@ -1,0 +1,11 @@
+.main-content {
+  padding-top: 30px;
+  padding-bottom: 58px;
+}
+
+.main-content__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+}

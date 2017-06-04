@@ -1,0 +1,11 @@
+.reviews {
+  box-sizing: border-box;
+  padding-bottom: 44px;
+}
+
+.reviews__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
