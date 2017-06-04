@@ -9,29 +9,29 @@
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-}
 
-.btn_contacts {
-  width: 260px;
-  margin: 0 auto;
-}
+  &_contacts {
+    width: 260px;
+    margin: 0 auto;
+  }
 
-.btn_create-process {
-  width: 192px;
-  margin: 0 auto;
-  margin-top: 30px;
-}
+  &_create-process {
+    width: 192px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
 
-.btn__order-form {
-  width: 260px;
-  margin-top: 40px;
-  background: none;
-}
+  &_order-form {
+    width: 260px;
+    margin-top: 40px;
+    background: none;
+  }
 
-.btn__form {
-  width: 260px;
-  margin-top: 31px;
-  background-color: $color-cyan;
-  border: none;
-  color: #ffffff;
+  &_form {
+    width: 260px;
+    margin-top: 31px;
+    background-color: $color-cyan;
+    border: none;
+    color: #ffffff;
+  }
 }

@@ -8,8 +8,8 @@
 
 .blockquote__author {
   font-style: normal;
+}
 
-  span {
-    font-weight: bold;
-  }
+.blockquote__name {
+  font-weight: bold;
 }

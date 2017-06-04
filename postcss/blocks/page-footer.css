@@ -6,8 +6,10 @@
   background-color: $gray-background;
 }
 
-.page-footer__logo_hidden {
-  display: none;
+.page-footer__logo {
+  &_hidden {
+    display: none;
+  }
 }
 
 .page-footer__social {

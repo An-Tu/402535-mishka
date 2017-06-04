@@ -14,6 +14,10 @@
 
 .form__radio {
   display: none;
+
+  &:checked+.form__label {
+    border-color: $color-cyan;
+  }
 }
 
 .form__label {
@@ -30,6 +34,3 @@
   }
 }
 
-.form__radio:checked+.form__label {
-  border-color: $color-cyan;
-}

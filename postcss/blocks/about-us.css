@@ -43,7 +43,7 @@
     width: 34px;
     height: 28px;
     background-image: url("../../img/icon-feature-5.svg");
-    ackground-repeat: no-repeat;
+    background-repeat: no-repeat;
   }
 
   &_handmade:before {

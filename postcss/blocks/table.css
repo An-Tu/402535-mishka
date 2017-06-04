@@ -1,36 +1,42 @@
-.table_block_best-week {
-  width: 260px;
-  margin-bottom: 28px;
-  border-collapse: collapse;
-  line-height: 1.6;
-}
+.table {
+  &_best-week {
+    width: 260px;
+    margin-bottom: 28px;
+    border-collapse: collapse;
+    line-height: 1.6;
+  }
 
-.table__data_block_best-week {
-  border-bottom: 1px solid $gray-2;
-  padding: 10px 0;
-}
-
-.table__data_block_best-week:first-child {
-  width: 100px;
-}
-
-.table_block_contacts {
-  width: 260px;
-  line-height: 2;
-
-  a {
-    padding-bottom: 5px;
-    text-decoration: none;
-    color: rgb(68, 68, 68);
-    border-bottom: 1px solid $color-cyan;
+  &_contacts {
+    width: 260px;
+    line-height: 2;
   }
 }
 
-.table__data_block_contacts {
-  vertical-align: top;
-  padding-bottom: 36px;
+.table__data {
+  &_best-week {
+    border-bottom: 1px solid $gray-2;
+    padding: 10px 0;
+  }
 
-  &:first-child {
+  &_best-week:first-child {
     width: 100px;
   }
+
+  &_contacts {
+    vertical-align: top;
+    padding-bottom: 36px;
+
+    &:first-child {
+      width: 100px;
+    }
+  }
 }
+
+.table__link {
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: rgb(68, 68, 68);
+  border-bottom: 1px solid $color-cyan;
+}
+
+
