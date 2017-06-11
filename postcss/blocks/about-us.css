@@ -67,3 +67,40 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about-us__wrapper {
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  .about-us__list {
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .about-us__item {
+    box-sizing: border-box;
+    width: 330px;
+    padding-right: 70px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .about-us__wrapper {
+    width: 1248px;
+    padding-right: 100px;
+    padding-left: 275px;
+  }
+
+  .about-us__list {
+    align-content: flex-start;
+  }
+
+  .about-us__item {
+    width: 370px;
+    padding-right: 85px;
+  }
+}

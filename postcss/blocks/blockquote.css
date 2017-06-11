@@ -13,3 +13,25 @@
 .blockquote__name {
   font-weight: bold;
 }
+
+@media (min-width: $tablet-width) {
+  .blockquote {
+    margin-bottom: -105px;
+  }
+
+  .blockquote__text {
+    margin-bottom: 50px;
+  }
+
+  .blockquote__name {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .blockquote__text {
+    line-height: 1.765;
+    padding-right: 80px;
+  }
+}

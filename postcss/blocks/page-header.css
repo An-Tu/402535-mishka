@@ -13,9 +13,55 @@
 }
 
 .page-header__logo {
-  width: 86px;
-  height: 35px;
-  padding: 22px 0;
   margin: 0 auto;
   font-size: 0;
+
+  a {
+    display: block;
+    width: 86px;
+    height: 35px;
+    padding: 22px 0;
+    background-image: url("../../img/logo-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  .page-header__logo {
+    margin: 0;
+
+    a {
+      width: 113px;
+      height: 46px;
+      padding: 17px 0;
+      background-image: url("../../img/logo-tablet.png");
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .page-header {
+    display: flex;
+    width: 1248px;
+    padding: 0 100px;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    left: calc(50% - 74px);
+
+    a {
+      width: 149px;
+      height: 72px;
+      padding: 4px 0;
+      background-image: url("../../img/logo-desktop.png");
+    }
+  }
 }

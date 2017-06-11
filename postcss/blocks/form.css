@@ -33,3 +33,9 @@
     margin-right: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .form__label {
+    width: 112px;
+  }
+}

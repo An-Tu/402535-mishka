@@ -9,9 +9,9 @@
     <header class="page-header">
       <h1 class="page-header__title">Mishka - изделия ручной работы</h1> <!-- Скрою, для семантики -->
       <div class="page-header__logo">
-        <a href="index.html"><img src="img/logo-mobile.svg" alt="Mishka">Главная</a>
+        <a href="index.html">Главная</a>
       </div>
-      <nav class="main-nav theme__content-text-size">
+      <nav class="main-nav theme__text-size">
         <button class="main-nav__toggler main-nav__toggler_hidden main-nav__toggler_unactive" type="button"></button> <!-- Кнопка мобильной навигации -->
         <div class="main-nav__wrapper main-nav__wrapper_hidden">
           <ul class="main-nav__list main-nav__list_left-side">
@@ -29,7 +29,7 @@
       </nav>
     </header>
     <main>
-      <div class="head-content">
+      <div class="head-content head-content_form">
         <h2 class="head-content__title theme__head-title-size">Вязание на заказ</h2>
       </div>
       <section class="main-content">
@@ -43,20 +43,22 @@
               <input class="order-form__radio" type="radio" id="baby-toy" name="type" value="baby-toy">
               <label class="order-form__radio-label theme__form-text-title" for="baby-toy">Детская игрушка</label>
             </fieldset>
-            <fieldset class="order-form__block">
+            <fieldset class="order-form__block order-form__block_color">
               <legend class="order-form__legend theme__form-text-title">Цвет</legend>
-              <input class="order-form__checkbox" type="checkbox" id="white" name="color" value="white">
-              <label class="order-form__checkbox-label theme__form-text-title" for="white">Белый</label>
-              <input class="order-form__checkbox" type="checkbox" id="gray" name="color" value="gray">
-              <label class="order-form__checkbox-label theme__form-text-title" for="gray">Серый</label>
-              <input class="order-form__checkbox" type="checkbox" id="tiffany" name="color" value="tiffany">
-              <label class="order-form__checkbox-label theme__form-text-title" for="tiffany">"Тиффани"</label>
-              <input class="order-form__checkbox" type="checkbox" id="black" name="color" value="black">
-              <label class="order-form__checkbox-label theme__form-text-title" for="black">Черный</label>
-              <input class="order-form__checkbox" type="checkbox" id="pink" name="color" value="pink">
-              <label class="order-form__checkbox-label theme__form-text-title" for="pink">Розовый</label>
-              <input class="order-form__checkbox" type="checkbox" id="orange" name="color" value="orange">
-              <label class="order-form__checkbox-label theme__form-text-title" for="orange">Оранжевый</label>
+              <div class="order-form__inner">
+                <input class="order-form__checkbox" type="checkbox" id="white" name="color" value="white">
+                <label class="order-form__checkbox-label theme__form-text-title" for="white">Белый</label>
+                <input class="order-form__checkbox" type="checkbox" id="gray" name="color" value="gray">
+                <label class="order-form__checkbox-label theme__form-text-title" for="gray">Серый</label>
+                <input class="order-form__checkbox" type="checkbox" id="tiffany" name="color" value="tiffany">
+                <label class="order-form__checkbox-label theme__form-text-title" for="tiffany">"Тиффани"</label>
+                <input class="order-form__checkbox" type="checkbox" id="black" name="color" value="black">
+                <label class="order-form__checkbox-label theme__form-text-title" for="black">Черный</label>
+                <input class="order-form__checkbox" type="checkbox" id="pink" name="color" value="pink">
+                <label class="order-form__checkbox-label theme__form-text-title" for="pink">Розовый</label>
+                <input class="order-form__checkbox" type="checkbox" id="orange" name="color" value="orange">
+                <label class="order-form__checkbox-label theme__form-text-title" for="orange">Оранжевый</label>
+              </div>
             </fieldset>
             <fieldset class="order-form__block">
               <legend class="order-form__legend theme__form-text-title">ФИО</legend>
@@ -67,15 +69,15 @@
               <label class="order-form__text-label theme__form-text-title" for="patronymic">Отчество:</label>
               <input class="order-form__text" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
             </fieldset>
-            <fieldset class="order-form__block order-form__block_no-padding-top">
+            <fieldset class="order-form__block order-form__block_phone order-form__block_no-padding-top">
               <legend class="order-form__legend theme__form-text-title">Тел</legend>
               <label class="order-form__hidden-label" for="phone">Телефон</label>
-              <input class="order-form__text" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
+              <input class="order-form__text order-form__text_phone" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
             </fieldset>
-            <fieldset class="order-form__block order-form__block_no-padding-top">
+            <fieldset class="order-form__block order-form__block_email order-form__block_no-padding-top">
               <legend class="order-form__legend theme__form-text-title">E-mail</legend>
               <label class="order-form__hidden-label" for="e-mail">E-mail</label>
-              <input class="order-form__text" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
+              <input class="order-form__text order-form__text_email" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
             </fieldset>
             <fieldset class="order-form__block order-form__block_no-padding-top">
               <legend class="order-form__legend theme__form-text-title">Доп</legend>
@@ -91,7 +93,6 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo page-footer__logo_hidden">
-          <img src="http://placehold.it/150x100" alt="Mishka">
         </div>
         <div class="page-footer__social">
           <span class="social-links">

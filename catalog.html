@@ -9,7 +9,7 @@
     <header class="page-header">
       <h1 class="page-header__title">Mishka - изделия ручной работы</h1> <!-- Скрою, для семантики -->
       <div class="page-header__logo">
-        <a href="index.html"><img src="img/logo-mobile.svg" alt="Mishka">Главная</a>
+        <a href="index.html">Главная</a>
       </div>
       <nav class="main-nav theme__text-size">
         <button class="main-nav__toggler main-nav__toggler_hidden main-nav__toggler_unactive" type="button"></button> <!-- Кнопка мобильной навигации -->
@@ -29,42 +29,52 @@
       </nav>
     </header>
     <main>
-      <div class="head-content">
+      <div class="head-content head-content_catalog">
         <h2 class="head-content__title theme__head-title-size">Каталог товаров</h2>
       </div>
       <section class="main-content">
         <div class="main-content__wrapper">
           <section class="catalog-items">
             <article class="catalog-item">
-              <a class="catalog-item__img" href="#"><img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик"></a>
-              <h3 class="catalog-item__title theme__ad-title">Зайчик-попрыгайчик</h3>
-              <p class="catalog-item__descr">Рост 30 см, вес 200 г</p>
-              <span class="catalog-item__price">1 200 руб.</span>
-              <a class="catalog-item__buy" href="#">В корзину</a>
+              <a class="catalog-item__img catalog-item__img_item-1" href="#">Зайчик-попрыгайчик</a>
+              <div class="catalog-item__inner">
+                <h3 class="catalog-item__title theme__ad-title">Зайчик-попрыгайчик</h3>
+                <p class="catalog-item__descr">Рост 30 см, вес 200 г</p>
+                <div class="catalog-item__price-container">
+                  <span class="catalog-item__price">1 200 руб.</span>
+                  <a class="catalog-item__buy" href="#">В корзину</a>
+                </div>
+              </div>
             </article>
             <article class="catalog-item">
-              <a class="catalog-item__img" href="#"><img src="img/photo-2-mobile@1x.jpg" alt="Корзина для белья"></a>
-              <h3 class="catalog-item__title theme__ad-title">Корзина для белья</h3>
-              <p class="catalog-item__descr">Диаметр 15 см, высота 10 см</p>
-              <span class="catalog-item__price">690 руб.</span>
-              <a class="catalog-item__buy" href="#">В корзину</a>
+              <a class="catalog-item__img catalog-item__img_item-2" href="#">Корзина для белья</a>
+              <div class="catalog-item__inner">
+                <h3 class="catalog-item__title theme__ad-title">Корзина для белья</h3>
+                <p class="catalog-item__descr">Диаметр 15 см, высота 10 см</p>
+                <div class="catalog-item__price-container">
+                  <span class="catalog-item__price">690 руб.</span>
+                  <a class="catalog-item__buy" href="#">В корзину</a>
+                </div>
+              </div>
             </article>
             <article class="catalog-item">
-              <a class="catalog-item__img" href="#"><img src="img/photo-3-mobile@1x.jpg" alt="Большая корзина для игрушек"></a>
-              <h3 class="catalog-item__title" theme__ad-title>Большая корзина для игрушек</h3>
-              <p class="catalog-item__descr">Диаметр 30 см, высота 30 см</p>
-              <span class="catalog-item__price">1 500 руб.</span>
-              <a class="catalog-item__buy" href="#">В корзину</a>
+              <a class="catalog-item__img catalog-item__img_item-3" href="#">Большая корзина для игрушек</a>
+              <div class="catalog-item__inner">
+                <h3 class="catalog-item__title theme__ad-title">Большая корзина для игрушек</h3>
+                <p class="catalog-item__descr">Диаметр 30 см, высота 30 см</p>
+                <div class="catalog-item__price-container">
+                  <span class="catalog-item__price">1 500 руб.</span>
+                  <a class="catalog-item__buy" href="#">В корзину</a>
+                </div>
+              </div>
             </article>
           </section>
           <section class="create-process">
-            <div class="create-process__video"><img src="img/video-mobile@1x.jpg" alt="процесс производства"></div>
-            <div class="create-process__text">
-              <div class="create-process__img"></div>
-              <h2 class="create-process__title theme__ad-title">Процесс<br>производства</h2>
-              <p class="create-process__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-              <a class="btn btn_create-process" href="#">Сделать заказ</a>
-            </div>
+            <div class="create-process__video">процесс производства</div>
+            <div class="create-process__img"></div>
+            <h2 class="create-process__title theme__ad-title">Процесс производства</h2>
+            <p class="create-process__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="btn btn_create-process" href="#">Сделать заказ</a>
           </section>
         </div>
       </section>
@@ -89,7 +99,6 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo page-footer__logo_hidden">
-          <img src="http://placehold.it/150x100" alt="Mishka">
         </div>
         <div class="page-footer__social">
           <span class="social-links">
