@@ -32,3 +32,23 @@
   border: 1px solid $gray-2;
   background: url("../../img/icon-right-arrow.svg") no-repeat 50% 50%;
 }
+
+@media (min-width: $tablet-width) {
+  .slider {
+    order: 3;
+  }
+
+  .slider__btns {
+    float: right;
+  }
+
+  .slider__prev {
+    width: 90px;
+    border: none;
+  }
+
+  .slider__next {
+    width: 90px;
+    border: none;
+  }
+}

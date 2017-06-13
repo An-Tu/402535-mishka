@@ -29,6 +29,7 @@
     padding-top: 28px;
     padding-bottom: 28px;
     font-weight: bold;
+    color: black;
     text-decoration: none;
     background-color: #ffffff;
     box-shadow: inset 0 -1px 0 0 $gray-2;
@@ -42,5 +43,126 @@
 .main-nav__delivery {
   &_hidden {
     display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggler {
+    &_hidden {
+      display: none;
+    }
+  }
+
+  .main-nav__wrapper {
+    position: static;
+    width: 578px;
+    height: 80px;
+
+    &_hidden {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .main-nav__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+
+    a {
+      width: auto;
+      padding: 10px 0;
+      background: none;
+      box-shadow: none;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &_search {
+      font-size: 0;
+      background-image: url("../../img/icon-search.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      a {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+        border-left: 1px solid $gray-2;
+        border-right: 1px solid $gray-2;
+      }
+    }
+
+    &_hidden {
+      display: none;
+    }
+  }
+
+  .main-nav__list {
+    &_left-side {
+      position: absolute;
+      top: 80px;
+      left: 50px;
+    }
+
+    &_right-side {
+      margin-left: auto;
+    }
+  }
+
+  .main-nav__delivery {
+    &_hidden {
+      display: inline-block;
+      position: absolute;
+      top: 90px;
+      right: 50px;
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .main-nav__wrapper {
+    width: 1075px;
+    height: 80px;
+  }
+
+  .main-nav__list {
+    &_left-side {
+      top: 0;
+      left: 75px;
+      display: flex;
+      width: 435px;
+      flex-wrap: wrap;
+
+      .main-nav__item {
+        margin-right: 0;
+
+        &_hidden {
+          display: inline-block;
+        }
+
+        &:nth-child(1) {
+          padding-right: 15px;
+          border-right: 1px solid $gray-2;
+        }
+
+        &:nth-child(2) {
+          padding-left: 15px;
+        }
+      }
+    }
+
+    a {
+      padding: 28px 25px;
+    }
+  }
+
+  .main-nav__delivery {
+    &_hidden {
+      top: 90px;
+      right: 100px;
+    }
   }
 }

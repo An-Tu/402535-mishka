@@ -3,3 +3,15 @@
   margin: 0 auto;
   position: relative;
 }
+
+@media (min-width: $tablet-width) {
+  .main-container {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .main-container {
+    width: 1248px;
+  }
+}

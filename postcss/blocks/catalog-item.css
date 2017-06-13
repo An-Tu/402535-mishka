@@ -5,6 +5,28 @@
   padding-bottom: 30px;
 }
 
+.catalog-item__img {
+  display: block;
+  width: 260px;
+  height: 195px;
+  font-size: 0;
+
+  &_item-1 {
+    background-image: url("../../img/photo-1-mobile@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &_item-2 {
+    background-image: url("../../img/photo-2-mobile@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &_item-3 {
+    background-image: url("../../img/photo-3-mobile@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
 .catalog-item__title {
   margin-top: 32px;
   margin-left: 28px;
@@ -34,4 +56,86 @@
   width: 21px;
   height: 19px;
   background: url("../../img/icon-cart.svg") no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    display: flex;
+    padding-bottom: 0;
+  }
+
+  .catalog-item__img {
+    width: 334px;
+    height: 334px;
+
+    &_item-1 {
+      background-image: url("../../img/photo-1-tablet.jpg");
+    }
+
+    &_item-2 {
+      background-image: url("../../img/photo-2-tablet.jpg");
+    }
+
+    &_item-3 {
+      background-image: url("../../img/photo-3-tablet.jpg");
+    }
+  }
+
+  .catalog-item__inner {
+    width: 334px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-item__descr {
+    font-size: 15px;
+    border: none;
+    padding: 0;
+  }
+
+  .catalog-item__price {
+    margin: 0;
+    font-size: 17px;
+  }
+
+  .catalog-item__price-container {
+    margin: 0 28px;
+    margin-top: auto;
+    padding: 28px 0;
+    border-top: 1px solid $gray-2;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .catalog-items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog-item {
+    width: 316px;
+    flex-direction: column;
+  }
+
+  .catalog-item__img {
+    width: 316px;
+    height: 462px;
+
+    &_item-1 {
+      background-image: url("../../img/photo-1-desktop.jpg");
+    }
+
+    &_item-2 {
+      background-image: url("../../img/photo-2-desktop.jpg");
+    }
+
+    &_item-3 {
+      background-image: url("../../img/photo-3-desktop.jpg");
+    }
+  }
+
+  .catalog-item__inner {
+    width: 316px;
+    height: 231px;
+  }
 }

@@ -33,3 +33,15 @@
   margin: 0 0 20px 0;
   font-size: 25px;
 }
+
+@media (min-width: $tablet-width) {
+  .modal-window__container {
+    width: 566px;
+    left: calc(50% - 283px);
+  }
+
+  .modal-window__title {
+    font-size: 30px;
+    padding: 0;
+  }
+}

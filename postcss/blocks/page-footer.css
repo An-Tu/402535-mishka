@@ -34,3 +34,40 @@
   position: relative;
   top: 10px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    width: 768px;
+    padding: 39px 50px 40px 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    width: 102px;
+    height: 34px;
+    background-image: url("../../img/logo-footer.png");
+
+    &_hidden {
+      display: block;
+    }
+  }
+
+  .page-footer__social {
+    border-bottom: none;
+    padding: 0;
+    margin-left: 150px;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .page-footer__wrapper {
+    width: 1248px;
+    padding: 39px 100px 40px 100px;
+  }
+
+  .page-footer__social {
+    margin-left: 330px;
+  }
+}

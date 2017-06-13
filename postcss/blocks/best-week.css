@@ -28,10 +28,105 @@
   line-height: 1.6;
 }
 
+.best-week__img {
+  width: 260px;
+  height: 315px;
+  background-image: url("../../img/triple-set-mobile@1x.jpg");
+}
+
 .best-week__price {
   display: block;
   text-align: center;
   font-weight: bold;
   margin: 29px 0;
   color: $dark-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .best-week__wrapper {
+    width: 768px;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .best-week__promo {
+    width: 100px;
+    margin-left: auto;
+    font-size: 17px;
+    text-align: center;
+    align-self: center;
+  }
+
+  .best-week__inner {
+    width: 668px;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .best-week__descr {
+    width: 290px;
+    line-height: 1.765;
+  }
+
+  .best-week__img {
+    order: 1;
+    width: 333px;
+    height: 404px;
+    background-image: url("../../img/triple-set-tablet.jpg");
+    align-self: flex-end;
+  }
+
+  .best-week__price {
+    width: 290px;
+    font-size: 20px;
+  }
+
+}
+
+@media (min-width: $desctop-width) {
+  .best-week {
+    padding-top: 72px;
+  }
+
+  .best-week__wrapper {
+    width: 1248px;
+    padding: 0 100px;
+  }
+
+  .best-week__title {
+    order: 2;
+    margin-bottom: -150px;
+    align-self: center;
+    z-index: 10;
+  }
+
+  .best-week__promo {
+    margin: 0 35px -150px 35px;
+    order: 1;
+  }
+
+  .best-week__inner {
+    order: 3;
+    height: 636px;
+    padding-left: 175px;
+  }
+
+  .best-week__descr {
+    margin: 50px 0;
+  }
+
+  .best-week__price {
+    margin-top: 70px;
+  }
+
+  .best-week__img {
+    width: 525px;
+    height: 636px;
+    margin-left: 60px;
+    background-image: url("../../img/triple-set-desktop.jpg");
+  }
 }

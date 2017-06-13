@@ -21,3 +21,48 @@
   margin: 0 auto 36px auto;
   background-image: url("../../img/map-mobile@1x.jpg");
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-bottom: 50px;
+  }
+
+  .contacts__wrapper {
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+  }
+
+  .contacts__map {
+    width: 768px;
+    margin: 0 auto 50px auto;
+    background-image: url("../../img/map-tablet.jpg");
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__wrapper {
+    width: auto;
+    padding-right: 30px;
+    padding-left: 275px;
+    margin: 0;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+  }
+
+  .contacts__map {
+    width: 525px;
+    margin: 0;
+    background-image: url("../../img/map-desktop.jpg");
+  }
+}

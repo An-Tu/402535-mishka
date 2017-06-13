@@ -9,3 +9,34 @@
   padding: 0 30px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__wrapper {
+    width: 768px;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .reviews__title {
+    order: 1;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .reviews {
+    background-position: 100px;
+  }
+
+  .reviews__wrapper {
+    width: 1248px;
+    padding-right: 100px;
+    padding-left: 275px;
+  }
+}

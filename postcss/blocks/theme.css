@@ -32,3 +32,36 @@
   font-size: 15px;
   color: rgb(68, 68, 68);
 }
+
+@media (min-width: $tablet-width) {
+  .theme__head-title-size {
+    font-size: 43px;
+  }
+
+  .theme__block-title-size {
+    font-size: 43px;
+  }
+
+  .theme__small-text-size {
+    font-size: 17px;
+  }
+
+  .theme__ad-title {
+    font-size: 20px;
+  }
+
+  .theme__text-size {
+    font-size: 17px;
+  }
+}
+
+
+@media (min-width: $desctop-width) {
+  .theme__head-title-size {
+    font-size: 53px;
+  }
+
+  .theme__block-title-size {
+    font-size: 53px;
+  }
+}

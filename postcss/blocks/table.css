@@ -38,3 +38,59 @@
   color: rgb(68, 68, 68);
   border-bottom: 1px solid $color-cyan;
 }
+
+@media (min-width: $tablet-width) {
+  .table {
+    &_best-week {
+      width: 290px;
+    }
+
+    &_contacts {
+      width: auto;
+
+      tbody {
+        display: flex;
+      }
+    }
+  }
+
+  .table__row {
+    &_contacts {
+      width: 334px;
+    }
+  }
+
+  .table__data {
+    &_contacts {
+      padding-bottom: 50px;
+    }
+
+    &_contacts:first-child {
+      width: 80px;
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .table {
+    &_contacts {
+      width: auto;
+
+      tbody {
+        display: table;
+      }
+    }
+  }
+
+  .table__row {
+    &_contacts {
+      width: 300px;
+    }
+  }
+
+  .table__data {
+    &_contacts {
+      width: 225px;
+    }
+  }
+}
