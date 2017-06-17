@@ -9,9 +9,14 @@
 }
 
 .main-nav__toggler {
+  width: 20px;
+  height: 14px;
   position: absolute;
-  top: 0;
+  top: 32px;
   right: 30px;
+  border: none;
+  background-image: url("../../img/icon-menu-open.svg");
+  background-color: white;
 }
 
 .main-nav__list {
@@ -67,7 +72,7 @@
   .main-nav__item {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 30px;
+    margin-right: 77px;
 
     a {
       width: auto;
@@ -87,8 +92,8 @@
       background-position: center;
 
       a {
-        width: 80px;
-        height: 80px;
+        width: 84px;
+        height: 96px;
         padding: 0;
         border-left: 1px solid $gray-2;
         border-right: 1px solid $gray-2;
@@ -103,12 +108,23 @@
   .main-nav__list {
     &_left-side {
       position: absolute;
-      top: 80px;
-      left: 50px;
+      top: 98px;
+      left: 48px;
+
+      .main-nav__item {
+        &:nth-child(1) {
+          margin-right: 34px;
+        }
+      }
     }
 
     &_right-side {
       margin-left: auto;
+      margin-right: 24px;
+    }
+
+    &_left-side {
+      font-size: 15px;
     }
   }
 
@@ -116,8 +132,9 @@
     &_hidden {
       display: inline-block;
       position: absolute;
-      top: 90px;
+      top: 108px;
       right: 50px;
+      font-size: 15px;
     }
   }
 }
@@ -138,20 +155,31 @@
 
       .main-nav__item {
         margin-right: 0;
+        font-size: 17px;
 
         &_hidden {
           display: inline-block;
+          font-size: 15px;
         }
 
         &:nth-child(1) {
-          padding-right: 15px;
+          padding-right: 10px;
+          margin-right: 0;
           border-right: 1px solid $gray-2;
         }
 
         &:nth-child(2) {
-          padding-left: 15px;
+          padding-left: 10px;
+        }
+
+        &:nth-child(4) {
+          padding-left: 10px;
         }
       }
+    }
+
+    &_right-side {
+      margin-right: 0;
     }
 
     a {
@@ -159,9 +187,13 @@
     }
   }
 
+  .main-nav__item {
+    margin-right: 55px;
+  }
+
   .main-nav__delivery {
     &_hidden {
-      top: 90px;
+      top: 108px;
       right: 100px;
     }
   }

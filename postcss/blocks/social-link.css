@@ -4,15 +4,15 @@
   display: inline-block;
   width: 25px;
   height: 30px;
-  margin-top: 30px;
+  margin-top: 26px;
 
   &_in {
-    margin-right: 41px;
+    margin-right: 32px;
     background: url("../../img/icon-insta.svg") no-repeat center;
   }
 
   &_fb {
-    margin-right: 41px;
+    margin-right: 32px;
     background: url("../../img/icon-fb.svg") no-repeat center;
   }
 
@@ -24,5 +24,6 @@
 @media (min-width: $tablet-width) {
   .social-link {
     margin-top: 0;
+    margin-bottom: 15px;
   }
 }

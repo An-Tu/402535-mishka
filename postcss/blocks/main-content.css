@@ -1,6 +1,10 @@
 .main-content {
   padding-top: 30px;
   padding-bottom: 58px;
+
+  &_form {
+    padding-top: 24px;
+  }
 }
 
 .main-content__wrapper {
@@ -11,6 +15,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-content {
+    padding-top: 82px;
+    padding-bottom: 63px;
+
+    &_form {
+      padding-top: 73px;
+      padding-bottom: 50px;
+    }
+  }
+
   .main-content__wrapper {
     width: 768px;
     padding: 0 50px;
@@ -21,5 +35,15 @@
   .main-content__wrapper {
     width: 1248px;
     padding: 0 100px;
+  }
+
+  .main-content {
+    padding-top: 130px;
+    padding-bottom: 105px;
+
+    &_form {
+      padding-top: 122px;
+      padding-bottom: 50px;
+    }
   }
 }

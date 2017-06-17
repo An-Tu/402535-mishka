@@ -1,7 +1,8 @@
 .create-process {
   display: flex;
   flex-direction: column;
-  padding: 30px 0;
+  padding-top: 12px;
+  padding-bottom: 30px;
   border: 1px solid $gray;
 }
 
@@ -17,12 +18,15 @@
 .create-process__title {
   order: 1;
   margin-left: 90px;
+  margin-bottom: 25px;
 }
 
 .create-process__descr {
   order: 3;
   font-size: 13px;
   padding: 0 34px;
+  margin-top: 28px;
+  margin-bottom: 0;
   color: rgb(68, 68, 68);
   line-height: 1.846;
 }
@@ -30,6 +34,7 @@
 @media (min-width: $tablet-width) {
   .create-process {
     padding-top: 0;
+    padding-bottom: 46px;
   }
 
   .create-process__video {
@@ -41,11 +46,14 @@
 
   .create-process__title {
     order: 2;
-    margin-top: 40px;
+    margin-top: 36px;
+    margin-left: 105px;
+    margin-bottom: 5px;
   }
 
   .create-process__descr {
-    margin-bottom: 30px;
+    margin-bottom: 39px;
+    padding: 0 39px;
     font-size: 15px;
   }
 }
@@ -73,7 +81,10 @@
 
   .create-process__descr {
     width: 230px;
+    margin-top: 24px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 45px;
+    line-height: 2;
   }
 }

@@ -7,7 +7,7 @@
 
 .order-form__descr {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   font-size: 13px;
   color: rgb(68, 68, 68);
   line-height: 1.846;
@@ -15,7 +15,7 @@
 
 .order-form__block {
   padding: 0;
-  padding-top: 40px;
+  padding-top: 28px;
   margin-bottom: 40px;
   border: none;
   border-top: 1px solid $color-cyan;
@@ -27,21 +27,23 @@
   &:last-of-type {
     margin-bottom: 10px;
   }
-}
 
-.order-form__radio-label {
-  display: block;
-  font-weight: bold;
-}
+  &_color {
+    margin-bottom: 37px;
+  }
 
-.order-form__checkbox-label {
-  display: block;
-  font-weight: bold;
-}
+  &_name {
+    padding-top: 21px;
+    margin-bottom: 29px;
+  }
 
-.order-form__text-label {
-  display: block;
-  font-weight: bold;
+  &_phone {
+    margin-bottom: 32px;
+  }
+
+  &_email {
+    margin-bottom: 32px;
+  }
 }
 
 .order-form__hidden-label {
@@ -50,7 +52,7 @@
 
 .order-form__legend {
   display: inline-block;
-  padding-right: 30px;
+  padding-right: 25px;
   text-transform: uppercase;
   font-weight: bold;
   color: $color-cyan;
@@ -67,18 +69,20 @@
 .order-form__radio-label {
   position: relative;
   margin-left: 62px;
+  display: block;
+  font-weight: bold;
 
   &:first-of-type {
-    margin-bottom: 25px;
+    margin-bottom: 14px;
   }
 
   &::before {
     content: "";
     position: absolute;
-    left: -60px;
-    top: -10px;
-    width: 44px;
-    height: 44px;
+    left: -64px;
+    top: -6px;
+    width: 35px;
+    height: 35px;
     border: 2px solid $dark-gray;
     border-radius: 50%;
   }
@@ -86,10 +90,10 @@
   &::after {
     content: "";
     position: absolute;
-    left: -44px;
-    top: 5px;
-    width: 16px;
-    height: 16px;
+    left: -52px;
+    top: 6px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
   }
 }
@@ -106,7 +110,9 @@
 .order-form__checkbox-label {
   position: relative;
   margin-left: 62px;
-  margin-bottom: 47px;
+  margin-bottom: 38px;
+  display: block;
+  font-weight: bold;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -115,18 +121,18 @@
   &::before {
     content: "";
     position: absolute;
-    left: -60px;
-    top: -10px;
-    width: 44px;
-    height: 44px;
+    left: -64px;
+    top: -8px;
+    width: 35px;
+    height: 35px;
     border: 2px solid $dark-gray;
   }
 
   &::after {
     content: "";
     position: absolute;
-    left: -46px;
-    top: 5px;
+    left: -56px;
+    top: 2px;
     width: 20px;
     height: 10px;
     transform: rotate(-45deg);
@@ -146,7 +152,9 @@
 }
 
 .order-form__text-label {
-  margin-top: 20px;
+  display: block;
+  margin-top: 17px;
+  font-weight: bold;
 
   &:first-of-type {
     margin-top: 0;
@@ -186,48 +194,98 @@
 
   .order-form__block {
     position: relative;
+    padding-top: 45px;
     padding-left: 217px;
     padding-right: 50px;
+    margin-bottom: 65px;
     border: none;
 
+    &:last-of-type {
+      padding-top: 11px;
+    }
+
     &_color {
+      padding-top: 60px;
+      margin-bottom: 3px;
       background-color: $gray-background;
+    }
+
+    &_name {
+      margin-bottom: 50px;
     }
 
     &_phone {
       background-color: $gray-background;
       margin-bottom: 0;
-      padding-bottom: 40px;
-      padding-top: 40px;
+      padding-bottom: 0;
+      padding-top: 48px;
     }
 
     &_email {
       background-color: $gray-background;
-      padding-bottom: 40px;
+      padding-top: 22px;
+      padding-bottom: 50px;
+      margin-bottom: 20px;
     }
   }
 
   .order-form__legend {
     position: absolute;
     left: 50px;
+
+    &_name {
+      top: 60px;
+    }
+
+    &_phone {
+      top: 60px;
+    }
+
+    &_email {
+      top: 35px;
+    }
+
+    &_more {
+      top: 40px;
+    }
   }
 
   .order-form__inner {
-    height: 210px;
+    height: 243px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
 
   .order-form__radio-label {
+    margin-left: 78px;
+
     &:first-of-type {
       margin-bottom: 50px;
+    }
+
+    &::before {
+      left: -80px;
+      top: -12px;
+      width: 48px;
+      height: 48px;
+    }
+
+    &::after {
+      left: -64px;
+      top: 4px;
+      width: 20px;
+      height: 20px;
     }
   }
 
   .order-form__checkbox-label {
+    margin-left: 78px;
+    margin-bottom: 50px;
+
     &:nth-of-type(1) {
       order: 1;
+      margin-right: 82px;
     }
 
     &:nth-of-type(2) {
@@ -249,15 +307,30 @@
     &:nth-of-type(6) {
       order: 6;
     }
+
+    &::before {
+      left: -80px;
+      top: -12px;
+      width: 50px;
+      height: 50px;
+    }
+
+    &::after {
+      left: -67px;
+      top: 3px;
+      width: 27px;
+      height: 13px;
+    }
   }
 
   .order-form__text-label {
     display: inline-block;
+    margin-top: 35px;
   }
 
   .order-form__text {
     box-sizing: border-box;
-    width: 375px;
+    width: 367px;
     margin-left: 25px;
     padding-left: 20px;
     font-size: 19px;
@@ -285,7 +358,7 @@
   }
 
   .order-form__hint {
-    margin-left: 355px;
+    margin-left: 410px;
     font-size: 17px;
   }
 }
@@ -296,12 +369,34 @@
   }
 
   .order-form__block {
-    padding-left: 225px;
+    padding-left: 276px;
     padding-right: 300px;
+
+    &:last-of-type {
+      margin-bottom: 6px;
+      padding-right: 270px;
+    }
+
+    &_color {
+      padding-right: 245px;
+      padding-bottom: 7px;
+    }
+
+    &_name {
+      padding-right: 245px;
+    }
+
+    &_phone {
+      padding-right: 270px;
+    }
+
+    &_email {
+      padding-right: 270px;
+    }
   }
 
   .order-form__descr {
-    padding-left: 225px;
+    padding-left: 276px;
     padding-right: 300px;
   }
 
@@ -321,6 +416,7 @@
 
     &:nth-of-type(2) {
       order: 3;
+      margin-left: 20px;
     }
 
     &:nth-of-type(3) {
@@ -333,10 +429,32 @@
 
     &:nth-of-type(5) {
       order: 4;
+      margin-left: 20px;
     }
 
     &:nth-of-type(6) {
       order: 6;
+    }
+  }
+
+  .order-form__legend {
+    position: absolute;
+    left: 155px;
+
+    &_name {
+      top: 60px;
+    }
+
+    &_phone {
+      top: 60px;
+    }
+
+    &_email {
+      top: 35px;
+    }
+
+    &_more {
+      top: 40px;
     }
   }
 
@@ -357,6 +475,6 @@
   }
 
   .order-form__hint {
-    margin-left: 635px;
+    margin-left: 668px;
   }
 }

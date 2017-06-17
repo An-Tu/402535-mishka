@@ -6,6 +6,7 @@
 }
 
 .about-us__title {
+  margin-top: 32px;
   margin-bottom: 80px;
 }
 
@@ -16,7 +17,7 @@
 
 .about-us__item {
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 77px;
 
   &:before {
     content: "";
@@ -74,8 +75,12 @@
     padding: 0 50px;
   }
 
+  .about-us__title {
+    margin-bottom: 98px;
+  }
+
   .about-us__list {
-    height: 380px;
+    height: 420px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -84,7 +89,16 @@
   .about-us__item {
     box-sizing: border-box;
     width: 330px;
-    padding-right: 70px;
+    margin-bottom: 100px;
+    padding-right: 35px;
+
+    &_gift-wrap {
+      margin-bottom: 0;
+    }
+
+    &_likes {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -95,12 +109,17 @@
     padding-left: 275px;
   }
 
+  .about-us__title {
+    margin-top: 50px;
+  }
+
   .about-us__list {
     align-content: flex-start;
+    margin-bottom: 22px;
   }
 
   .about-us__item {
-    width: 370px;
-    padding-right: 85px;
+    width: 350px;
+    padding-right: 55px;
   }
 }
