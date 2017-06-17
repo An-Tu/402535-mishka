@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body class="theme">
+  <body class="main-container theme">
     <header class="page-header">
       <h1 class="page-header__title">Mishka - изделия ручной работы</h1> <!-- Скрою, для семантики -->
       <div class="page-header__logo">
@@ -32,7 +32,7 @@
       <div class="head-content head-content_form">
         <h2 class="head-content__title theme__head-title-size">Вязание на заказ</h2>
       </div>
-      <section class="main-content">
+      <section class="main-content main-content_form">
         <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="order-form__wrapper">
             <p class="order-form__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -60,8 +60,8 @@
                 <label class="order-form__checkbox-label theme__form-text-title" for="orange">Оранжевый</label>
               </div>
             </fieldset>
-            <fieldset class="order-form__block">
-              <legend class="order-form__legend theme__form-text-title">ФИО</legend>
+            <fieldset class="order-form__block order-form__block_name">
+              <legend class="order-form__legend order-form__legend_name theme__form-text-title">ФИО</legend>
               <label class="order-form__text-label theme__text-size" for="first-name">Имя:</label>
               <input class="order-form__text order-form__text_long" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
               <label class="order-form__text-label theme__form-text-title" for="surname">Фамилия:</label>
@@ -70,17 +70,17 @@
               <input class="order-form__text" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
             </fieldset>
             <fieldset class="order-form__block order-form__block_phone order-form__block_no-padding-top">
-              <legend class="order-form__legend theme__form-text-title">Тел</legend>
+              <legend class="order-form__legend order-form__legend_phone theme__form-text-title">Тел</legend>
               <label class="order-form__hidden-label" for="phone">Телефон</label>
               <input class="order-form__text order-form__text_phone" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
             </fieldset>
             <fieldset class="order-form__block order-form__block_email order-form__block_no-padding-top">
-              <legend class="order-form__legend theme__form-text-title">E-mail</legend>
+              <legend class="order-form__legend order-form__legend_email theme__form-text-title">E-mail</legend>
               <label class="order-form__hidden-label" for="e-mail">E-mail</label>
               <input class="order-form__text order-form__text_email" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
             </fieldset>
             <fieldset class="order-form__block order-form__block_no-padding-top">
-              <legend class="order-form__legend theme__form-text-title">Доп</legend>
+              <legend class="order-form__legend order-form__legend_more theme__form-text-title">Доп</legend>
               <label class="order-form__hidden-label" for="extra">Доп информация</label>
               <textarea class="order-form__textarea" name="extra" id="extra" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
             </fieldset>

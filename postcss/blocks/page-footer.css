@@ -13,7 +13,7 @@
 }
 
 .page-footer__social {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #e5e5e5;
   text-align: center;
 }
@@ -24,7 +24,8 @@
 
 .page-footer__author {
   display: inline-block;
-  margin-right: 30px;
+  margin-top: 23px;
+  margin-right: 24px;
   font-size: 19px;
   font-weight: bold;
 }
@@ -68,6 +69,6 @@
   }
 
   .page-footer__social {
-    margin-left: 330px;
+    margin-left: 347px;
   }
 }

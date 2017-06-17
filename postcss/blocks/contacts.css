@@ -1,6 +1,6 @@
 .contacts {
   box-sizing: border-box;
-  padding-top: 44px;
+  padding-top: 31px;
   padding-bottom: 39px;
 }
 
@@ -13,18 +13,20 @@
 
 .contacts__title {
   font-size: 18px;
+  margin-bottom: 26px;
 }
 
 .contacts__map {
   width: 320px;
   height: 457px;
-  margin: 0 auto 36px auto;
+  margin: 8px auto 39px auto;
   background-image: url("../../img/map-mobile@1x.jpg");
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-bottom: 50px;
+    padding-top: 77px;
+    padding-bottom: 58px;
   }
 
   .contacts__wrapper {
@@ -34,11 +36,12 @@
 
   .contacts__title {
     font-size: 43px;
+    margin-bottom: 36px;
   }
 
   .contacts__map {
     width: 768px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 55px auto;
     background-image: url("../../img/map-tablet.jpg");
   }
 }
@@ -47,17 +50,19 @@
   .contacts {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 105px;
   }
 
   .contacts__wrapper {
     width: auto;
-    padding-right: 30px;
+    padding-right: 45px;
     padding-left: 275px;
     margin: 0;
   }
 
   .contacts__title {
     font-size: 53px;
+    margin-top: 62px;
   }
 
   .contacts__map {

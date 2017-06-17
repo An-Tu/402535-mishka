@@ -1,6 +1,6 @@
 .best-week {
   box-sizing: border-box;
-  padding-top: 34px;
+  padding-top: 25px;
   padding-bottom: 35px;
 }
 
@@ -14,7 +14,7 @@
 .best-week__title {
   margin: 0;
   padding-left: 2px;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 
 .best-week__promo {
@@ -24,7 +24,8 @@
 }
 
 .best-week__descr {
-  margin: 30px 0;
+  margin-top: 22px;
+  margin-bottom: 17px;
   line-height: 1.6;
 }
 
@@ -38,11 +39,17 @@
   display: block;
   text-align: center;
   font-weight: bold;
-  margin: 29px 0;
+  margin-top: 24px;
+  margin-bottom: 28px;
   color: $dark-gray;
+  font-size: 17px;
 }
 
 @media (min-width: $tablet-width) {
+  .best-week {
+    padding-top: 40px;
+  }
+
   .best-week__wrapper {
     width: 768px;
     padding: 0 50px;
@@ -50,25 +57,33 @@
     flex-wrap: wrap;
   }
 
+  .best-week__title {
+    padding: 0;
+  }
+
   .best-week__promo {
     width: 100px;
     margin-left: auto;
+    margin-right: 13px;
     font-size: 17px;
     text-align: center;
     align-self: center;
+    line-height: 1;
   }
 
   .best-week__inner {
     width: 668px;
-    height: 500px;
+    height: 455px;
     display: flex;
-    justify-content: flex-end;
+    padding-top: 43px;
+    justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
   }
 
   .best-week__descr {
     width: 290px;
+    margin: 0 0 32px 0;
     line-height: 1.765;
   }
 
@@ -76,12 +91,15 @@
     order: 1;
     width: 333px;
     height: 404px;
+    margin-top: 8px;
     background-image: url("../../img/triple-set-tablet.jpg");
     align-self: flex-end;
   }
 
   .best-week__price {
     width: 290px;
+    margin-top: 26px;
+    margin-bottom: 33px;
     font-size: 20px;
   }
 
@@ -90,6 +108,7 @@
 @media (min-width: $desctop-width) {
   .best-week {
     padding-top: 72px;
+    padding-bottom: 95px;
   }
 
   .best-week__wrapper {
@@ -105,27 +124,30 @@
   }
 
   .best-week__promo {
-    margin: 0 35px -150px 35px;
+    margin: 0 35px -165px 35px;
     order: 1;
   }
 
   .best-week__inner {
     order: 3;
     height: 636px;
+    padding-top: 0;
     padding-left: 175px;
   }
 
   .best-week__descr {
-    margin: 50px 0;
+    margin-top: 160px;
+    margin-bottom: 50px;
   }
 
   .best-week__price {
-    margin-top: 70px;
+    margin-top: 83px;
   }
 
   .best-week__img {
     width: 525px;
     height: 636px;
+    margin-top: 0;
     margin-left: 60px;
     background-image: url("../../img/triple-set-desktop.jpg");
   }
