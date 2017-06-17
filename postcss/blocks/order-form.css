@@ -211,7 +211,7 @@
     }
 
     &_name {
-       margin-bottom: 50px;
+      margin-bottom: 50px;
     }
 
     &_phone {
@@ -246,7 +246,7 @@
     }
 
     &_more {
-       top: 40px;
+      top: 40px;
     }
   }
 
@@ -383,7 +383,7 @@
     }
 
     &_name {
-       padding-right: 245px;
+      padding-right: 245px;
     }
 
     &_phone {

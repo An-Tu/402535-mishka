@@ -113,7 +113,7 @@
 
       .main-nav__item {
         &:nth-child(1) {
-           margin-right: 34px;
+          margin-right: 34px;
         }
       }
     }
@@ -124,7 +124,7 @@
     }
 
     &_left-side {
-       font-size: 15px;
+      font-size: 15px;
     }
   }
 
