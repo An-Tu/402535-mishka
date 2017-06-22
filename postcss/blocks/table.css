@@ -37,6 +37,15 @@
   text-decoration: none;
   color: rgb(68, 68, 68);
   border-bottom: 1px solid $color-cyan;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: #d3ede8;
+    border-bottom: 1px solid #ecf9f7;
+  }
 }
 
 @media (min-width: $tablet-width) {

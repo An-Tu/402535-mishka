@@ -9,6 +9,16 @@
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #444444;
+    color: #ececec;
+  }
+
+  &:active {
+    color: #8d8d8d;
+  }
 
   &_contacts {
     width: 260px;
@@ -81,8 +91,7 @@
 
     &_create-process {
       width: 230px;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 65px;
     }
 
     &_order-form {
