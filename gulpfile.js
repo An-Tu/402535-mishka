@@ -45,6 +45,7 @@ gulp.task("images", function () {
 gulp.task("script", function () {
   return gulp.src("js/*.js")
     .pipe(jsmin())
+    .pipe(gulp.dest("build/js"))
     .pipe(rename("app.min.js"))
     .pipe(gulp.dest("build/js"));
 });
@@ -83,6 +84,7 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("postcss/**/*.css", ["style"]);
+  gulp.watch("js/*.js", ["script"]);
   gulp.watch("*.html", ["html:update"]);
 });
 
@@ -94,7 +96,6 @@ gulp.task("copy", function () {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
     "img/**",
-    "js/**",
     "*.html"
   ], {
     base: "."
