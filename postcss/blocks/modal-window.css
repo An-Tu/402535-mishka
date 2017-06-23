@@ -14,9 +14,9 @@
 
 .modal-window__container {
   box-sizing: border-box;
-  position: absolute;
-  top: 28%;
-  left: 0;
+  position: fixed;
+  top: 20%;
+  left: calc(50% - 160px);
   width: 320px;
   padding: 33px 30px 43px 30px;
   margin: 0 auto;

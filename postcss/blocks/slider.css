@@ -20,7 +20,15 @@
   display: inline-block;
   text-indent: -99999px;
   border: 1px solid $gray-2;
-  background: url("../../img/icon-left-arrow.svg") no-repeat 50% 50%;
+  background: url("../img/icon-left-arrow.svg") no-repeat 50% 50%;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .slider__next {
@@ -30,7 +38,15 @@
   display: inline-block;
   text-indent: -99999px;
   border: 1px solid $gray-2;
-  background: url("../../img/icon-right-arrow.svg") no-repeat 50% 50%;
+  background: url("../img/icon-right-arrow.svg") no-repeat 50% 50%;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

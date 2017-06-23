@@ -19,7 +19,23 @@
 }
 
 .page-footer__copyright {
+  display: block;
   text-align: center;
+  color: #000000;
+
+  &:hover {
+    .page-footer__link {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    color: #bfbfbf;
+
+    .page-footer__link {
+      fill: #bde3dd;
+    }
+  }
 }
 
 .page-footer__author {
@@ -31,9 +47,10 @@
 }
 
 .page-footer__link {
-  font-size: 0;
   position: relative;
   top: 10px;
+
+  fill: #63d1bb;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,9 +62,13 @@
   }
 
   .page-footer__logo {
-    width: 102px;
-    height: 34px;
-    background-image: url("../../img/logo-footer.png");
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      fill: #bde3dd;
+    }
 
     &_hidden {
       display: block;
@@ -57,7 +78,7 @@
   .page-footer__social {
     border-bottom: none;
     padding: 0;
-    margin-left: 150px;
+    margin-left: 157px;
     margin-right: auto;
   }
 }

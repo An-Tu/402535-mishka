@@ -22,9 +22,17 @@
     height: 35px;
     padding: 22px 0;
     margin: 0 auto;
-    background-image: url("../../img/logo-mobile.svg");
+    background-image: url("../img/logo-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -43,7 +51,7 @@
       width: 113px;
       height: 46px;
       padding: 22px 0;
-      background-image: url("../../img/logo-tablet.png");
+      background-image: url("../img/logo-tablet.svg");
     }
   }
 }
@@ -63,7 +71,7 @@
       width: 149px;
       height: 72px;
       padding: 4px 0;
-      background-image: url("../../img/logo-desktop.png");
+      background-image: url("../img/logo-desktop.svg");
     }
   }
 }

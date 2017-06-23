@@ -4,21 +4,59 @@
   padding-top: 12px;
   padding-bottom: 30px;
   border: 1px solid $gray;
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .create-process__video {
+  position: relative;
   order: 2;
   width: 260px;
   height: 150px;
-  background-image: url("../../img/video-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  font-size: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - (76px / 2));
+    left: calc(50% - (100px / 2));
+    width: 100px;
+    height: 76px;
+    background-image: url("../img/icon-play.svg");
+    transition: 0.2s;
+  }
+
+  &:hover::after  {
+    transform: scale(1.2);
+  }
+
+  &:active::after {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .create-process__title {
+  position: relative;
   order: 1;
   margin-left: 90px;
   margin-bottom: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -57px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/icon-video.svg");
+  }
 }
 
 .create-process__descr {
@@ -41,7 +79,6 @@
     order: 1;
     width: 668px;
     height: 455px;
-    background-image: url("../../img/video-tablet.jpg")
   }
 
   .create-process__title {
@@ -49,6 +86,11 @@
     margin-top: 36px;
     margin-left: 105px;
     margin-bottom: 5px;
+
+    &::before {
+      top: -3px;
+      left: -64px;
+    }
   }
 
   .create-process__descr {
@@ -69,21 +111,25 @@
     order: 1;
     width: 682px;
     height: 455px;
-    background-image: url("../../img/video-desktop.jpg")
   }
 
   .create-process__title {
     width: 230px;
     margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 65px;
+
+    &::before {
+      top: -54px;
+      left: 0;
+    }
   }
 
   .create-process__descr {
     width: 230px;
+    padding: 0;
     margin-top: 24px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 65px;
+    margin-right: 0;
     margin-bottom: 45px;
     line-height: 2;
   }

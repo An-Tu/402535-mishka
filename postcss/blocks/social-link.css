@@ -6,24 +6,27 @@
   height: 30px;
   margin-top: 26px;
 
+  svg {
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      fill: #bde3dd;
+    }
+  }
+
   &_in {
     margin-right: 32px;
-    background: url("../../img/icon-insta.svg") no-repeat center;
   }
 
   &_fb {
     margin-right: 32px;
-    background: url("../../img/icon-fb.svg") no-repeat center;
-  }
-
-  &_tw {
-    background: url("../../img/icon-twitter.svg") no-repeat center;
   }
 }
 
 @media (min-width: $tablet-width) {
   .social-link {
     margin-top: 0;
-    margin-bottom: 15px;
   }
 }

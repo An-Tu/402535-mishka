@@ -12,15 +12,34 @@
 }
 
 .contacts__title {
+  position: relative;
   font-size: 18px;
   margin-bottom: 26px;
 }
 
 .contacts__map {
+  position: relative;
   width: 320px;
   height: 457px;
   margin: 8px auto 39px auto;
-  background-image: url("../../img/map-mobile@1x.jpg");
+  background-image: url("../img/map-mobile@1x.jpg");
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 101px;
+    top: 164px;
+    left: 124px;
+    background-image: url("../img/icon-map-pin.svg");
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .contacts__map {
+    background-image: url("../img/map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -37,12 +56,35 @@
   .contacts__title {
     font-size: 43px;
     margin-bottom: 36px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 82px;
+      right: 3px;
+      top: -11px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   .contacts__map {
     width: 768px;
     margin: 0 auto 55px auto;
-    background-image: url("../../img/map-tablet.jpg");
+    background-image: url("../img/map-tablet@1x.jpg");
+    background-size: 768px auto;
+
+    &:after {
+      top: 164px;
+      left: 348px;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .contacts__map {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
   }
 }
 
@@ -63,11 +105,28 @@
   .contacts__title {
     font-size: 53px;
     margin-top: 62px;
+
+    &::after {
+      left: -112px;
+      top: 0;
+    }
   }
 
   .contacts__map {
     width: 525px;
     margin: 0;
-    background-image: url("../../img/map-desktop.jpg");
+    background-image: url("../img/map-desktop@1x.jpg");
+    background-size: 525px auto;
+
+    &:after {
+      top: 166px;
+      left: 236px;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .contacts__map {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
   }
 }

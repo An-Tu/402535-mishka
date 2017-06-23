@@ -32,7 +32,6 @@
 .best-week__img {
   width: 260px;
   height: 315px;
-  background-image: url("../../img/triple-set-mobile@1x.jpg");
 }
 
 .best-week__price {
@@ -92,7 +91,6 @@
     width: 333px;
     height: 404px;
     margin-top: 8px;
-    background-image: url("../../img/triple-set-tablet.jpg");
     align-self: flex-end;
   }
 
@@ -149,6 +147,5 @@
     height: 636px;
     margin-top: 0;
     margin-left: 60px;
-    background-image: url("../../img/triple-set-desktop.jpg");
   }
 }
