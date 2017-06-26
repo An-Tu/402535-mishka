@@ -13,7 +13,7 @@
 }
 
 .page-footer__social {
-  padding-bottom: 25px;
+  padding-bottom: 19px;
   border-bottom: 1px solid #e5e5e5;
   text-align: center;
 }
@@ -41,22 +41,21 @@
 .page-footer__author {
   display: inline-block;
   margin-top: 23px;
-  margin-right: 24px;
+  margin-right: 29px;
   font-size: 19px;
   font-weight: bold;
 }
 
 .page-footer__link {
   position: relative;
-  top: 10px;
-
+  top: 13px;
   fill: #63d1bb;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     width: 768px;
-    padding: 39px 50px 40px 50px;
+    padding: 35px 50px 40px 50px;
     display: flex;
     align-items: center;
   }
@@ -75,18 +74,26 @@
     }
   }
 
+  .page-footer__author {
+    margin-right: 30px;
+  }
+
   .page-footer__social {
     border-bottom: none;
     padding: 0;
     margin-left: 157px;
     margin-right: auto;
   }
+
+  .page-footer__link {
+    top: 14px;
+  }
 }
 
 @media (min-width: $desctop-width) {
   .page-footer__wrapper {
-    width: 1248px;
-    padding: 39px 100px 40px 100px;
+    width: 1150px;
+    padding: 35px 50px 40px 50px;
   }
 
   .page-footer__social {

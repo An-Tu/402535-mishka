@@ -3,12 +3,13 @@
   width: 320px;
   margin: 0 auto;
   background-color: $gray-background;
-  padding: 74px 0;
+  padding: 72px 0 76px 0;
 
   &_background {
     padding-top: 72px;
     padding-bottom: 0;
     background-image: url(../img/hero-mobile@1x.jpg);
+    background-color: $gray-background;
     background-repeat: no-repeat;
     background-position: 50% -18px;
   }
@@ -117,10 +118,10 @@
     &::after {
       content: "";
       position: absolute;
-      width: 100%;
+      width: 768px;
       height: 23px;
-      bottom: -10px;
-      left: 0;
+      bottom: -12px;
+      left: -4px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: no-repeat;
       background-size: cover;
@@ -132,12 +133,21 @@
     }
 
     &_catalog {
-      padding-top: 100px;
+      padding-top: 96px;
+      padding-bottom: 80px;
+
+      &::after {
+        bottom: -14px;
+      }
     }
 
     &_form {
-      padding-top: 95px;
+      padding-top: 96px;
       padding-bottom: 81px;
+
+      &::after {
+        bottom: -14px;
+      }
     }
   }
 
@@ -152,18 +162,19 @@
     width: 334px;
     font-size: 20px;
     padding-left: 36px;
-    padding-top: 33px;
-    padding-bottom: 32px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    line-height: 1.5;
 
     &_left {
       &:hover {
-        padding-bottom: 37px;
+        padding-bottom: 34px;
       }
     }
 
     &_right {
       &:hover {
-        padding-bottom: 37px;
+        padding-bottom: 34px;
       }
     }
   }
@@ -190,29 +201,43 @@
 
 @media (min-width: $desctop-width) {
   .head-content {
-    width: 1248px;
+    width: 1150px;
     padding-top: 150px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
 
     &::after {
+      width: 1260px;
       bottom: -6px;
+      left: -55px;
     }
 
     &_background {
       background-image: url(../img/hero-desktop@1x.jpg);
-      background-position: 0;
-      background-size: cover;
+      background-position: -50px 0;
+      background-size: 1250px 746px;
     }
 
     &_catalog {
       padding-top: 93px;
       padding-bottom: 100px;
+
+      &::after {
+        width: 1150px;
+        bottom: -9px;
+        left: 0;
+      }
     }
 
     &_form {
       padding-top: 93px;
       padding-bottom: 100px;
+
+      &::after {
+        width: 1150px;
+        bottom: -9px;
+        left: 0;
+      }
     }
   }
 
@@ -221,7 +246,7 @@
   }
 
   .head-content__btn {
-    width: 523px;
+    width: 525px;
   }
 
   .head-content__interior-img {

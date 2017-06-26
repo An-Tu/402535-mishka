@@ -1,5 +1,5 @@
 .theme {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial",  sans-serif;
 }
 
 .theme__head-title-size {
@@ -31,6 +31,10 @@
 .theme__small-text-size {
   font-size: 15px;
   color: rgb(68, 68, 68);
+}
+
+.theme__table-size {
+  font-size: 15px;
 }
 
 @media (min-width: $tablet-width) {

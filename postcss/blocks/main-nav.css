@@ -6,6 +6,12 @@
   &_hidden {
     display: none;
   }
+
+  &_no-js {
+    display: block;
+    position: relative;
+    left: -30px;
+  }
 }
 
 .main-nav__toggler {
@@ -26,6 +32,10 @@
     width: 21px;
     height: 21px;
     background-image: url("../img/icon-menu-close.svg");
+  }
+
+  &_no-js {
+    display: none;
   }
 }
 
@@ -151,8 +161,8 @@
 
     &_basket {
       a {
-        padding-top: 38px;
-        padding-bottom: 33px;
+        position: relative;
+        padding: 38px 0 33px 48px;
       }
     }
 
@@ -172,11 +182,13 @@
   }
 
   .main-nav__cart-img {
-    margin-right: 25px;
+    position: absolute;
+    top: 41px;
+    left: -3px;
   }
 
   .main-nav__search-img {
-    padding: 44px 31px 34px;
+    padding: 44px 32px 34px;
     margin-right: 0;
   }
 
@@ -195,7 +207,7 @@
 
     &_right-side {
       margin-left: auto;
-      margin-right: 24px;
+      margin-right: 22px;
     }
 
     &_left-side {
@@ -225,7 +237,7 @@
   .main-nav__list {
     &_left-side {
       top: 0;
-      left: 75px;
+      left: 25px;
       display: flex;
       width: 435px;
       flex-wrap: wrap;
@@ -257,10 +269,18 @@
 
     &_right-side {
       margin-right: 0;
+
+      .main-nav__item {
+        &_basket {
+          a {
+            padding: 30px 25px 26px 77px;
+          }
+        }
+      }
     }
 
     a {
-      padding: 28px 25px;
+      padding: 30px 25px 26px 25px;
     }
   }
 
@@ -275,13 +295,14 @@
   }
 
   .main-nav__cart-img {
-    margin-right: 29px;
+    top: 33px;
+    left: 23px;
   }
 
   .main-nav__delivery {
     &_hidden {
       top: 108px;
-      right: 100px;
+      right: 50px;
     }
   }
 }

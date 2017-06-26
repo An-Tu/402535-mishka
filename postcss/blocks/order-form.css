@@ -1,4 +1,6 @@
 .order-form__wrapper {
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   width: 320px;
   padding: 0 30px;
@@ -15,7 +17,8 @@
 
 .order-form__block {
   padding: 0;
-  padding-top: 28px;
+  padding-top: 29px;
+  margin: 0;
   margin-bottom: 40px;
   border: none;
   border-top: 1px solid $color-cyan;
@@ -25,11 +28,11 @@
   }
 
   &:last-of-type {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   &_color {
-    margin-bottom: 37px;
+    margin-bottom: 38px;
   }
 
   &_name {
@@ -38,27 +41,35 @@
   }
 
   &_phone {
+    margin-bottom: 29px;
+  }
+
+  &_email {
+    margin-bottom: 29px;
+  }
+}
+
+.order-form__inner {
+  &_phone {
     position: relative;
-    margin-bottom: 32px;
   }
 
   &_email {
     position: relative;
-    margin-bottom: 32px;
   }
 }
 
 .order-form__phone-img {
   position: absolute;
-  right: 11px;
-  top: 35px;
+  right: 9px;
+  top: 15px;
   fill: #cccccc;
 }
 
 .order-form__email-img {
   position: absolute;
-  right: 6px;
-  top: 35px;
+  right: 4px;
+  top: 15px;
   fill: #cccccc;
 }
 
@@ -67,7 +78,6 @@
 }
 
 .order-form__legend {
-  display: inline-block;
   padding-right: 25px;
   text-transform: uppercase;
   font-weight: bold;
@@ -84,12 +94,13 @@
 
 .order-form__radio-label {
   position: relative;
-  margin-left: 62px;
+  margin-left: 64px;
   display: block;
   font-weight: bold;
+  line-height: 1.2;
 
   &:first-of-type {
-    margin-bottom: 14px;
+    margin-bottom: 21px;
   }
 
   &::before {
@@ -133,7 +144,7 @@
 
 .order-form__checkbox-label {
   position: relative;
-  margin-left: 62px;
+  margin-left: 64px;
   margin-bottom: 38px;
   display: block;
   font-weight: bold;
@@ -173,10 +184,18 @@
 
 .order-form__text {
   width: 260px;
-  padding: 15px 0;
+  padding: 15px 0 15px 0;
   border: none;
   border-bottom: 2px solid #000000;
   font-size: 17px;
+
+  &_phone {
+    margin-top: 4px;
+  }
+
+  &_email {
+    margin-top: 4px;
+  }
 
   &:placeholder {
     color: $light-gray;
@@ -222,7 +241,7 @@
   width: 260px;
   height: 142px;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 22px;
   border: 2px solid $dark-gray;
   resize: none;
   font-size: 17px;
@@ -253,6 +272,7 @@
 
   .order-form__descr {
     padding-left: 50px;
+    padding-right: 50px;
     font-size: 17px;
   }
 
@@ -261,11 +281,12 @@
     padding-top: 45px;
     padding-left: 217px;
     padding-right: 50px;
-    margin-bottom: 65px;
+    margin-bottom: 69px;
     border: none;
 
     &:last-of-type {
-      padding-top: 11px;
+      padding-top: 8px;
+      margin-bottom: 8px;
     }
 
     &_color {
@@ -282,25 +303,25 @@
       background-color: $gray-background;
       margin-bottom: 0;
       padding-bottom: 0;
-      padding-top: 48px;
+      padding-top: 44px;
     }
 
     &_email {
       background-color: $gray-background;
-      padding-top: 22px;
+      padding-top: 18px;
       padding-bottom: 50px;
       margin-bottom: 20px;
     }
   }
 
   .order-form__phone-img {
-    right: 75px;
-    top: 61px;
+    right: 27px;
+    top: 17px;
   }
 
   .order-form__email-img {
-    right: 70px;
-    top: 35px;
+    right: 22px;
+    top: 17px;
   }
 
   .order-form__legend {
@@ -325,17 +346,24 @@
   }
 
   .order-form__inner {
-    height: 243px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    &_color {
+      height: 243px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    &_name {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   .order-form__radio-label {
-    margin-left: 78px;
+    margin-left: 80px;
 
     &:first-of-type {
-      margin-bottom: 50px;
+      margin-bottom: 53px;
     }
 
     &::before {
@@ -354,12 +382,12 @@
   }
 
   .order-form__checkbox-label {
-    margin-left: 78px;
+    margin-left: 80px;
     margin-bottom: 50px;
 
     &:nth-of-type(1) {
       order: 1;
-      margin-right: 82px;
+      margin-right: 78px;
     }
 
     &:nth-of-type(2) {
@@ -398,19 +426,23 @@
   }
 
   .order-form__text-label {
-    display: inline-block;
     margin-top: 35px;
+
+    &:first-of-type {
+      margin-top: 15px;
+    }
   }
 
   .order-form__text {
     box-sizing: border-box;
-    width: 367px;
+    width: 375px;
     margin-left: 25px;
-    padding-left: 20px;
+    padding-left: 17px;
     font-size: 19px;
 
     &_long {
-      width: 424px;
+      width: 427px;
+      margin-left: 30px;
     }
 
     &_phone {
@@ -424,11 +456,22 @@
       margin-left: 0;
       background-color: $gray-background;
     }
+
+    &_surname {
+      margin-top: 22px;
+    }
+
+    &_patronymic {
+      margin-top: 22px;
+    }
   }
 
   .order-form__textarea {
     width: 100%;
     margin-bottom: 50px;
+    padding-top: 11px;
+    padding-left: 14px;
+    font-size: 19px;
   }
 
   .order-form__hint {
@@ -439,56 +482,61 @@
 
 @media (min-width: $desctop-width) {
   .order-form__wrapper {
-    width: 1248px;
+    width: 1150px;
   }
 
   .order-form__block {
-    padding-left: 276px;
-    padding-right: 300px;
+    padding-left: 226px;
+    padding-right: 225px;
 
     &:last-of-type {
       margin-bottom: 6px;
-      padding-right: 270px;
+      padding-right: 225px;
     }
 
     &_color {
-      padding-right: 245px;
+      padding-right: 195px;
       padding-bottom: 7px;
+      padding-top: 59px;
     }
 
     &_name {
-      padding-right: 245px;
+      padding-right: 195px;
     }
 
     &_phone {
-      padding-right: 270px;
+      padding-right: 225px;
     }
 
     &_email {
-      padding-right: 270px;
+      padding-right: 225px;
+    }
+  }
+
+  .order-form__radio-label {
+    &:first-of-type {
+      margin-bottom: 55px;
     }
   }
 
   .order-form__phone-img {
-    right: 280px;
+    right: 8px;
   }
 
   .order-form__email-img {
-    right: 275px;
+    right: 4px;
   }
 
   .order-form__descr {
-    padding-left: 276px;
-    padding-right: 300px;
+    padding-left: 226px;
+    padding-right: 225px;
   }
 
   .order-form__inner {
-    align-content: space-between;
-    height: 160px;
-  }
-
-  .order-form__legend {
-    left: 100px;
+    &_color {
+      align-content: space-between;
+      height: 160px;
+    }
   }
 
   .order-form__checkbox-label {
@@ -521,30 +569,39 @@
 
   .order-form__legend {
     position: absolute;
-    left: 155px;
+    left: 112px;
+
+    &_color {
+      top: 63px;
+      left: 108px;
+    }
 
     &_name {
-      top: 60px;
+      top: 61px;
+      left: 110px;
     }
 
     &_phone {
-      top: 60px;
+      top: 64px;
+      left: 110px;
     }
 
     &_email {
-      top: 35px;
+      top: 40px;
+      left: 110px;
     }
 
     &_more {
-      top: 40px;
+      top: 44px;
+      left: 111px;
     }
   }
 
   .order-form__text {
-    width: 573px;
+    width: 575px;
 
     &_long {
-      width: 626px;
+      width: 625px;
     }
 
     &_phone {
@@ -557,6 +614,6 @@
   }
 
   .order-form__hint {
-    margin-left: 668px;
+    margin-left: 618px;
   }
 }
