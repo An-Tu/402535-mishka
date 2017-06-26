@@ -22,50 +22,82 @@
   &:before {
     content: "";
     position: absolute;
-    top: -50px;
-    left: 8px;
   }
 
-  &_eco:before {
-    width: 33px;
-    height: 38px;
-    background-image: url("../img/icon-feature-1.svg");
-    background-repeat: no-repeat;
+  &_eco {
+    padding-right: 65px;
+
+    &:before {
+      width: 33px;
+      height: 38px;
+      top: -50px;
+      left: 8px;
+      background-image: url("../img/icon-feature-1.svg");
+      background-repeat: no-repeat;
+    }
   }
 
-  &_good-price:before {
-    width: 47px;
-    height: 27px;
-    background-image: url("../img/icon-feature-3.svg");
-    background-repeat: no-repeat;
+  &_good-price {
+    padding-right: 60px;
+
+    &:before {
+      width: 47px;
+      height: 27px;
+      top: -49px;
+      left: 0;
+      background-image: url("../img/icon-feature-3.svg");
+      background-repeat: no-repeat;
+    }
   }
 
-  &_likes:before {
-    width: 34px;
-    height: 28px;
-    background-image: url("../img/icon-feature-5.svg");
-    background-repeat: no-repeat;
+  &_likes {
+    padding-right: 60px;
+
+    &:before {
+      width: 34px;
+      height: 28px;
+      top: -44px;
+      left: 8px;
+      background-image: url("../img/icon-feature-5.svg");
+      background-repeat: no-repeat;
+    }
   }
 
-  &_handmade:before {
-    width: 34px;
-    height: 35px;
-    background-image: url("../img/icon-feature-2.svg");
-    background-repeat: no-repeat;
+  &_handmade {
+
+    &:before {
+      width: 34px;
+      height: 35px;
+      top: -46px;
+      left: 3px;
+      background-image: url("../img/icon-feature-2.svg");
+      background-repeat: no-repeat;
+    }
   }
 
-  &_russia-made:before {
-    width: 55px;
-    height: 23px;
-    background-image: url("../img/icon-feature-4.svg");
-    background-repeat: no-repeat;
+  &_russia-made {
+
+    &:before {
+      width: 55px;
+      height: 23px;
+      top: -45px;
+      left: -6px;
+      background-image: url("../img/icon-feature-4.svg");
+      background-repeat: no-repeat;
+    }
   }
 
-  &_gift-wrap:before {
-    width: 33px;
-    height: 32px;
-    background-image: url("../img/icon-feature-6.svg");
-    background-repeat: no-repeat;
+  &_gift-wrap {
+    padding-right: 60px;
+
+    &:before {
+      width: 33px;
+      height: 32px;
+      top: -48px;
+      left: 3px;
+      background-image: url("../img/icon-feature-6.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -76,12 +108,15 @@
   }
 
   .about-us__title {
+    margin-top: 36px;
     margin-bottom: 98px;
+    margin-left: -4px;
   }
 
   .about-us__list {
     height: 420px;
     display: flex;
+    margin-bottom: 18px;
     flex-wrap: wrap;
     flex-direction: column;
   }
@@ -89,37 +124,140 @@
   .about-us__item {
     box-sizing: border-box;
     width: 330px;
-    margin-bottom: 100px;
+    margin-bottom: 107px;
     padding-right: 35px;
+    line-height: 1.2;
 
-    &_gift-wrap {
-      margin-bottom: 0;
+    &_eco {
+      padding-right: 100px;
+
+      &:before {
+        top: -53px;
+        left: 9px;
+      }
+    }
+
+    &_good-price {
+      padding-right: 70px;
+
+      &:before {
+        top: -52px;
+        left: 1px;
+      }
     }
 
     &_likes {
+      padding-right: 90px;
       margin-bottom: 0;
+
+      &:before {
+        top: -47px;
+        left: 8px;
+      }
+    }
+
+    &_handmade {
+
+      &:before {
+        top: -50px;
+        left: 3px;
+      }
+    }
+
+    &_russia-made {
+
+      &:before {
+        top: -49px;
+        left: -6px;
+      }
+    }
+
+    &_gift-wrap {
+      padding-right: 60px;
+      margin-bottom: 0;
+
+      &:before {
+        top: -51px;
+        left: 3px;
+      }
     }
   }
 }
 
 @media (min-width: $desctop-width) {
   .about-us__wrapper {
-    width: 1248px;
-    padding-right: 100px;
-    padding-left: 275px;
+    width: 1150px;
+    padding-right: 50px;
+    padding-left: 225px;
   }
 
   .about-us__title {
-    margin-top: 50px;
+    margin-top: 48px;
+    margin-bottom: 94px;
+    margin-left: -4px;
   }
 
   .about-us__list {
     align-content: flex-start;
-    margin-bottom: 22px;
+    margin-bottom: 25px;
   }
 
   .about-us__item {
     width: 350px;
     padding-right: 55px;
+
+    &_eco {
+      padding-right: 120px;
+
+      &:before {
+        top: -53px;
+        left: 9px;
+      }
+    }
+
+    &_good-price {
+      padding-right: 90px;
+
+      &:before {
+        top: -52px;
+        left: 1px;
+      }
+    }
+
+    &_likes {
+      padding-right: 110px;
+      margin-bottom: 0;
+
+      &:before {
+        top: -47px;
+        left: 8px;
+      }
+    }
+
+    &_handmade {
+
+      &:before {
+        top: -50px;
+        left: 3px;
+      }
+    }
+
+    &_russia-made {
+
+      &:before {
+        top: -49px;
+        left: -6px;
+      }
+    }
+
+    &_gift-wrap {
+      padding-right: 60px;
+      margin-bottom: 0;
+
+      &:before {
+        top: -51px;
+        left: 3px;
+      }
+    }
   }
 }

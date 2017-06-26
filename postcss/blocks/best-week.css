@@ -1,7 +1,22 @@
 .best-week {
   box-sizing: border-box;
+  position: relative;
   padding-top: 25px;
   padding-bottom: 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 7px;
+    left: -3px;
+    bottom: -5px;
+    background-image: url(../img/bg-zigzag-line.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+  }
 }
 
 .best-week__wrapper {
@@ -47,6 +62,14 @@
 @media (min-width: $tablet-width) {
   .best-week {
     padding-top: 40px;
+
+    &::after {
+      width: 768px;
+      height: 17px;
+      left: 0;
+      bottom: 9px;
+      transform: rotate(180deg);
+    }
   }
 
   .best-week__wrapper {
@@ -58,6 +81,7 @@
 
   .best-week__title {
     padding: 0;
+    margin-left: -4px;
   }
 
   .best-week__promo {
@@ -82,7 +106,7 @@
 
   .best-week__descr {
     width: 290px;
-    margin: 0 0 32px 0;
+    margin: 0 0 35px 0;
     line-height: 1.765;
   }
 
@@ -97,7 +121,7 @@
   .best-week__price {
     width: 290px;
     margin-top: 26px;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
     font-size: 20px;
   }
 
@@ -107,16 +131,24 @@
   .best-week {
     padding-top: 72px;
     padding-bottom: 95px;
+
+    &::after {
+      width: 1050px;
+      height: 24px;
+      left: 50px;
+      bottom: 3px;
+    }
   }
 
   .best-week__wrapper {
-    width: 1248px;
-    padding: 0 100px;
+    width: 1150px;
+    padding: 0 50px;
   }
 
   .best-week__title {
     order: 2;
-    margin-bottom: -150px;
+    margin-bottom: -160px;
+    margin-left: 0;
     align-self: center;
     z-index: 10;
   }
@@ -128,7 +160,7 @@
 
   .best-week__inner {
     order: 3;
-    height: 636px;
+    height: 639px;
     padding-top: 0;
     padding-left: 175px;
   }
@@ -140,6 +172,7 @@
 
   .best-week__price {
     margin-top: 83px;
+    margin-bottom: 31px;
   }
 
   .best-week__img {

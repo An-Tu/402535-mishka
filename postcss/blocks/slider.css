@@ -9,7 +9,7 @@
 
 .slider__btns {
   font-size: 0;
-  margin-top: 33px;
+  margin-top: 31px;
   margin-bottom: 38px;
 }
 
@@ -56,10 +56,11 @@
 
   .slider__btns {
     float: right;
+    margin-top: 39px;
   }
 
   .slider__prev {
-    width: 90px;
+    width: 83px;
     border: none;
   }
 

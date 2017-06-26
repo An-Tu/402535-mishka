@@ -42,11 +42,19 @@ gulp.task("images", function () {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("script", function () {
-  return gulp.src("js/*.js")
+gulp.task("script-app", function () {
+  return gulp.src("js/app.js")
     .pipe(jsmin())
     .pipe(gulp.dest("build/js"))
     .pipe(rename("app.min.js"))
+    .pipe(gulp.dest("build/js"));
+});
+
+gulp.task("script-map", function () {
+  return gulp.src("js/map.js")
+    .pipe(jsmin())
+    .pipe(gulp.dest("build/js"))
+    .pipe(rename("map.min.js"))
     .pipe(gulp.dest("build/js"));
 });
 
@@ -84,18 +92,20 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("postcss/**/*.css", ["style"]);
-  gulp.watch("js/*.js", ["script"]);
+  gulp.watch("js/app.js", ["script-app"]);
+  gulp.watch("js/map.js", ["script-map"]);
   gulp.watch("*.html", ["html:update"]);
 });
 
 gulp.task("build", function (fn) {
-  return run("clean", "copy", "style", "images", "sprite", "script", fn);
+  return run("clean", "copy", "style", "images", "sprite", "script-app", "script-map", fn);
 });
 
 gulp.task("copy", function () {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
     "img/**",
+    "js/picturefill.min.js",
     "*.html"
   ], {
     base: "."

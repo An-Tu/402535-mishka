@@ -5,7 +5,7 @@
   border: 2px solid $dark-gray;
   text-align: center;
   color: $dark-gray;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -29,13 +29,15 @@
     order: 4;
     width: 192px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 25px;
   }
 
   &_order-form {
     width: 260px;
-    margin-top: 28px;
+    margin-top: 30px;
+    padding: 13px 0;
     background: none;
+    font-size: 17px;
   }
 
   &_form {
@@ -49,6 +51,8 @@
 
 @media (min-width: $tablet-width) {
   .btn {
+    font-size: 17px;
+
     &_best-week {
       width: 290px;
     }
@@ -65,14 +69,14 @@
     &_reviews {
       order: 2;
       width: 175px;
-      margin-top: 5px;
+      margin-top: 11px;
       margin-left: auto;
     }
 
     &_order-form {
       width: 230px;
       padding: 14px 0;
-      margin-top: -40px;
+      margin-top: -36px;
       margin-left: 50px;
     }
 
@@ -86,16 +90,20 @@
 @media (min-width: $desctop-width) {
   .btn {
     &_contacts {
-      margin: -51px 0 0 275px;
+      margin: -51px 0 0 225px;
     }
 
     &_create-process {
       width: 230px;
-      margin-left: 65px;
+      margin-left: 63px;
     }
 
     &_order-form {
-      margin-left: 275px;
+      margin-left: 225px;
+    }
+
+    &_reviews {
+      margin-top: 14px;
     }
   }
 }

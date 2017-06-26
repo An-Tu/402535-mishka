@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js" type="text/javascript"></script>
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="main-container theme">
@@ -10,12 +12,12 @@
   </svg>
     <header class="page-header">
       <h1 class="page-header__title">Mishka - изделия ручной работы</h1> <!-- Скрою, для семантики -->
-      <div class="page-header__logo">
+      <div class="page-header__logo page-header__logo_no-js">
         <a href="index.html">Главная</a>
       </div>
       <nav class="main-nav theme__text-size">
-        <button class="main-nav__toggler main-nav__toggler_hidden main-nav__toggler_unactive" type="button"></button> <!-- Кнопка мобильной навигации -->
-        <div class="main-nav__wrapper main-nav__wrapper_hidden">
+        <button class="main-nav__toggler main-nav__toggler_hidden main-nav__toggler_unactive main-nav__toggler_no-js" type="button"></button> <!-- Кнопка мобильной навигации -->
+        <div class="main-nav__wrapper main-nav__wrapper_hidden main-nav__wrapper_no-js">
           <ul class="main-nav__list main-nav__list_left-side">
             <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
@@ -44,21 +46,21 @@
       <div class="head-content head-content_catalog">
         <h2 class="head-content__title theme__head-title-size">Каталог товаров</h2>
       </div>
-      <section class="main-content">
+      <section class="main-content main-content_catalog">
         <div class="main-content__wrapper">
           <section class="catalog-items">
             <article class="catalog-item">
               <a class="catalog-item__img catalog-item__img_item-1" href="#">
                 <picture>
-                  <source media="(min-width: 1248px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                  <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"  alt="Зайчик-попрыгайчик">
+                  <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
                 </picture>
               </a>
               <div class="catalog-item__inner">
-                <h3 class="catalog-item__title theme__ad-title"><a href="#">Зайчик-попрыгайчик</a></h3>
-                <p class="catalog-item__descr">Рост 30 см, вес 200 г</p>
-                <div class="catalog-item__price-container">
+                <h3 class="catalog-item__title catalog-item__title_item-1 theme__ad-title"><a href="#">Зайчик-попрыгайчик</a></h3>
+                <p class="catalog-item__descr catalog-item__descr_item-1">Рост 30 см, вес 200 г</p>
+                <div class="catalog-item__price-container catalog-item__price-container_item-1">
                   <span class="catalog-item__price">1 200 руб.</span>
                   <a class="catalog-item__buy" href="#">
                     В корзину
@@ -70,15 +72,15 @@
             <article class="catalog-item">
               <a class="catalog-item__img catalog-item__img_item-2" href="#">
                 <picture>
-                  <source media="(min-width: 1248px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                  <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"  alt="Корзина для белья">
+                  <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Корзина для белья">
                 </picture>
               </a>
               <div class="catalog-item__inner">
-                <h3 class="catalog-item__title theme__ad-title"><a href="#">Корзина для белья</a></h3>
-                <p class="catalog-item__descr">Диаметр 15 см, высота 10 см</p>
-                <div class="catalog-item__price-container">
+                <h3 class="catalog-item__title catalog-item__title_item-2 theme__ad-title"><a href="#">Корзинка для белья</a></h3>
+                <p class="catalog-item__descr catalog-item__descr_item-2">Диаметр 15 см, высота 10 см</p>
+                <div class="catalog-item__price-container catalog-item__price-container_item-2">
                   <span class="catalog-item__price">690 руб.</span>
                   <a class="catalog-item__buy" href="#">
                     В корзину
@@ -90,15 +92,15 @@
             <article class="catalog-item">
               <a class="catalog-item__img catalog-item__img_item-3" href="#">
                 <picture>
-                  <source media="(min-width: 1248px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-                  <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"  alt="Большая корзина для игрушек">
+                  <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Большая корзина для игрушек">
                 </picture>
               </a>
               <div class="catalog-item__inner">
-                <h3 class="catalog-item__title theme__ad-title"><a href="#">Большая корзина для игрушек</a></h3>
-                <p class="catalog-item__descr">Диаметр 30 см, высота 30 см</p>
-                <div class="catalog-item__price-container">
+                <h3 class="catalog-item__title catalog-item__title_item-3 theme__ad-title"><a href="#">Большая корзинка<br>для игрушек</a></h3>
+                <p class="catalog-item__descr catalog-item__descr_item-3">Диаметр 30 см, высота 30 см</p>
+                <div class="catalog-item__price-container catalog-item__price-container_item-3">
                   <span class="catalog-item__price">1 500 руб.</span>
                   <a class="catalog-item__buy" href="#">
                     В корзину
@@ -111,9 +113,9 @@
           <section class="create-process">
             <div class="create-process__video">
               <picture>
-                <source media="(min-width: 1248px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-                <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x"  alt="процесс производства">
+                <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="процесс производства">
               </picture>
             </div>
             <div class="create-process__img"></div>
@@ -153,7 +155,7 @@
             <a class="social-link social-link_tw" href="#">Мы в твиттере<svg width="23" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg></a>
           </span>
         </div>
-        <a class="page-footer__copyright" href="#">
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="page-footer__author">Разработано</p><svg width="27" height="34" class="page-footer__link"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use></svg>
         </a>
       </div>

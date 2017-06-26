@@ -9,6 +9,7 @@
   &_contacts {
     width: 260px;
     line-height: 2;
+    border-collapse: collapse;
   }
 }
 
@@ -24,7 +25,7 @@
 
   &_contacts {
     vertical-align: top;
-    padding-bottom: 27px;
+    padding-bottom: 29px;
 
     &:first-child {
       width: 100px;
@@ -33,7 +34,7 @@
 }
 
 .table__link {
-  padding-bottom: 5px;
+  padding-bottom: 3px;
   text-decoration: none;
   color: rgb(68, 68, 68);
   border-bottom: 1px solid $color-cyan;
@@ -65,7 +66,11 @@
 
   .table__data {
   &_best-week {
-      padding: 7px 0;
+      padding: 8px 0;
+
+      &:first-child {
+        width: 98px;
+      }
     }
   }
 
@@ -78,11 +83,12 @@
   .table__data {
     &_contacts {
       padding: 0;
-      padding-bottom: 45px;
+      padding-bottom: 55px;
+      line-height: 1.8;
     }
 
     &_contacts:first-child {
-      width: 70px;
+      width: 77px;
     }
   }
 }
@@ -107,11 +113,11 @@
   .table__data {
     &_contacts {
       width: 225px;
-      padding-bottom: 25px;
+      padding-bottom: 30px;
     }
 
     &_best-week {
-      padding: 5px 0;
+      padding: 7px 0;
     }
   }
 }

@@ -23,6 +23,10 @@
       padding-top: 73px;
       padding-bottom: 50px;
     }
+
+    &_catalog {
+      padding-top: 80px;
+    }
   }
 
   .main-content__wrapper {
@@ -33,8 +37,8 @@
 
 @media (min-width: $desctop-width) {
   .main-content__wrapper {
-    width: 1248px;
-    padding: 0 100px;
+    width: 1150px;
+    padding: 0 50px;
   }
 
   .main-content {
@@ -44,6 +48,10 @@
     &_form {
       padding-top: 122px;
       padding-bottom: 50px;
+    }
+
+    &_catalog {
+      padding-bottom: 102px;
     }
   }
 }
