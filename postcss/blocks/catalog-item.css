@@ -21,6 +21,7 @@
   display: block;
   width: 260px;
   height: 195px;
+  overflow: hidden;
 }
 
 .catalog-item__title {
@@ -101,7 +102,7 @@
   }
 
   .catalog-item__title {
-    margin-top: 22px;
+    margin-top: 23px;
     margin-bottom: 7px;
 
     &_item-1 {
@@ -141,21 +142,22 @@
 
   .catalog-item__price-container {
     margin: 0 31px;
+    margin-top: auto;
     padding-top: 23px;
-    padding-bottom: 23px;
+    padding-bottom: 27px;
     border-top: 1px solid $gray-2;
 
-    &_item-1 {
-      margin-top: 160px;
-    }
+    /*&_item-1 {*/
+      /*margin-top: 160px;*/
+    /*}*/
 
-    &_item-2 {
-      margin-top: 157px;
-    }
+    /*&_item-2 {*/
+      /*margin-top: 157px;*/
+    /*}*/
 
-    &_item-3 {
-      margin-top: 136px;
-    }
+    /*&_item-3 {*/
+      /*margin-top: 136px;*/
+    /*}*/
   }
 
   .catalog-item__buy {
@@ -171,7 +173,6 @@
 
   .catalog-item {
     width: 316px;
-    height: 658px;
     flex-direction: column;
     margin-bottom: 57px;
   }

@@ -47,6 +47,7 @@
 .best-week__img {
   width: 260px;
   height: 315px;
+  overflow: hidden;
 }
 
 .best-week__price {
@@ -96,7 +97,7 @@
 
   .best-week__inner {
     width: 668px;
-    height: 455px;
+    min-height: 455px;
     display: flex;
     padding-top: 43px;
     justify-content: flex-start;
@@ -111,6 +112,9 @@
   }
 
   .best-week__img {
+    position: absolute;
+    top: 145px;
+    right: 50px;
     order: 1;
     width: 333px;
     height: 404px;
@@ -160,7 +164,7 @@
 
   .best-week__inner {
     order: 3;
-    height: 639px;
+    min-height: 639px;
     padding-top: 0;
     padding-left: 175px;
   }
@@ -176,6 +180,7 @@
   }
 
   .best-week__img {
+    top: 72px;
     width: 525px;
     height: 636px;
     margin-top: 0;
